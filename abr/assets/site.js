@@ -165,3 +165,74 @@ window.addEventListener('afterprint', () => {
 });
 print.addEventListener('click', () => window.print());
 print.hidden = false;
+
+// The catalogue stays readable when JavaScript is unavailable.
+const catalogue = [...document.querySelectorAll('.analogue')];
+const searchInput = document.querySelector('#analogue-search');
+const sectorFilter = document.querySelector('#sector-filter');
+const modelFilter = document.querySelector('#model-filter');
+const normalize = (text) => text.toLocaleLowerCase('ru').replaceAll('ё', 'е');
+const catalogueText = catalogue.map(item => normalize(item.textContent));
+function filterCatalogue() {
+  const words = normalize(searchInput.value.trim()).split(/\s+/).filter(Boolean);
+  let visible = 0;
+  catalogue.forEach((item, i) => {
+    const match = (sectorFilter.value === 'all' || sectorFilter.value === item.dataset.sector)
+      && (modelFilter.value === 'all' || modelFilter.value === item.dataset.model)
+      && words.every(word => catalogueText[i].includes(word));
+    item.hidden = !match;
+    if (match) visible++;
+  });
+  document.querySelector('#catalog-status').textContent = `Показано ${visible} из ${catalogue.length}. Раскройте строку для сравнения.`;
+  document.querySelector('#catalog-empty').hidden = visible !== 0;
+}
+searchInput.addEventListener('input', filterCatalogue);
+sectorFilter.addEventListener('change', filterCatalogue);
+modelFilter.addEventListener('change', filterCatalogue);
+function resetCatalogue() {
+  searchInput.value = ''; sectorFilter.value = 'all'; modelFilter.value = 'all'; filterCatalogue();
+}
+document.querySelector('#reset-catalog').addEventListener('click', resetCatalogue);
+document.querySelector('.catalog-tools').hidden = false;
+function revealReference() {
+  const id = location.hash.slice(1);
+  const item = catalogue.find(item => item.id === id);
+  if (item) {
+    resetCatalogue(); item.open = true;
+    requestAnimationFrame(() => item.scrollIntoView({ block: 'start' }));
+  }
+}
+window.addEventListener('hashchange', revealReference);
+revealReference();
+
+const economicForm = document.querySelector('#economics-form');
+const economicResult = document.querySelector('#economics-output');
+const rubles = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+function calculateEconomics() {
+  const { clients, price, variable, fixed } = economicForm.elements;
+  const n = clients.valueAsNumber, p = price.valueAsNumber, v = variable.valueAsNumber, f = fixed.valueAsNumber;
+  const contribution = p - v;
+  const revenue = n * p;
+  const balance = n * contribution - f;
+  let threshold;
+  if (contribution > 0) threshold = 'Порог покрытия: ' + Math.ceil(f / contribution) + ' клиентов.';
+  else if (contribution === 0 && f === 0) threshold = 'При нулевых фиксированных затратах результат равен нулю при любом числе клиентов.';
+  else threshold = 'Положительный результат недостижим при этих цене и затратах. Пересмотрите допущения.';
+  economicResult.textContent = `Сценарий за год. Выручка: ${rubles.format(revenue)}. Вклад на клиента: ${rubles.format(contribution)}. Результат после указанных затрат: ${rubles.format(balance)}. ${threshold}`;
+}
+economicForm.addEventListener('submit', event => { event.preventDefault(); calculateEconomics(); });
+economicForm.addEventListener('input', () => { economicResult.textContent = 'Допущения изменены. Рассчитайте сценарий заново.'; });
+document.querySelector('#economics-example').addEventListener('click', () => {
+  Object.entries({ clients: 10, price: 120000, variable: 30000, fixed: 600000 }).forEach(([key, value]) => { economicForm.elements[key].value = value; });
+  calculateEconomics(); economicResult.textContent = 'Условный пример, не данные АБР. ' + economicResult.textContent;
+});
+economicForm.querySelector('[type="submit"]').disabled = false;
+document.querySelector('#economics-example').hidden = false;
+
+// Print the complete catalogue and restore the reader's filters afterwards.
+let printHidden = [];
+window.addEventListener('beforeprint', () => {
+  printHidden = catalogue.filter(item => item.hidden);
+  printHidden.forEach(item => { item.hidden = false; });
+});
+window.addEventListener('afterprint', () => { printHidden.forEach(item => { item.hidden = true; }); printHidden = []; });
