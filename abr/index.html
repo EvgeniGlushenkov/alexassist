@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Независимый обзор АвтоБизнесРевю по открытым данным. Продукты, рынок, SWOT, GAP и план проверки гипотез.">
+  <title>АвтоБизнесРевю · Анализ издательства</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>АБР <span class="brand-label">/ Аналитика</span></a>
+      <nav aria-label="Разделы презентации">
+        <a href="#products">Продукты</a>
+        <a href="#swot">SWOT</a>
+        <a href="#gap">GAP</a>
+        <a href="#plan">План</a>
+      </nav>
+      <button class="print-button" type="button" data-print hidden>Печать / PDF</button>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-date"><span aria-hidden="true"></span>Независимый анализ · 15 ноября 2026</p>
+          <h1 id="page-title">АвтоБизнесРевю</h1>
+          <p class="hero-lead">Как издательству развивать платную подписку и отраслевую аналитику</p>
+          <p class="hero-note">На основе открытых данных. Оценка выручки, конверсии и продлений требует данных издательства.</p>
+          <a class="button button-primary" href="#plan">План на 30 дней <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="market-panel" id="market" aria-labelledby="market-title">
+          <div class="market-head">
+            <div><p class="eyebrow">Россия · июнь–октябрь 2026</p><h2 id="market-title">Новый легковой авторынок</h2></div>
+            <div class="segmented chart-switch" role="group" aria-label="Показатель графика" hidden>
+              <button type="button" data-metric="volume" aria-pressed="true">Объём</button>
+              <button type="button" data-metric="change" aria-pressed="false">Год к году</button>
+            </div>
+          </div>
+          <div class="market-summary" aria-live="polite">
+            <div>
+              <strong id="market-value">132,9 тыс.</strong>
+              <span id="market-period">Октябрь 2026</span>
+            </div>
+            <span class="market-change" id="market-change">−19,8% г/г</span>
+          </div>
+          <div class="chart" id="market-chart" aria-label="Выберите месяц на графике" role="group" hidden></div>
+          <figcaption class="chart-caption">АВТОСТАТ / АО «ППК» · <a id="market-source" href="https://www.autostat.ru/press-releases/63433/">Данные за октябрь ↗</a></figcaption>
+          <details class="market-details">
+            <summary>Данные графика</summary>
+            <table id="market-table">
+              <thead><tr><th scope="col">Месяц</th><th scope="col">Тыс. шт.</th><th scope="col">Год к году</th></tr></thead>
+              <tbody>
+                <tr data-month="Июнь" data-short="Июн" data-volume="116.3" data-change="29"><th scope="row"><a href="https://www.autostat.ru/press-releases/62653/">Июнь</a></th><td>116,3</td><td>+29,0%</td></tr>
+                <tr data-month="Июль" data-short="Июл" data-volume="122.1" data-change="1.2"><th scope="row"><a href="https://www.autostat.ru/press-releases/62855/">Июль</a></th><td>122,1</td><td>+1,2%</td></tr>
+                <tr data-month="Август" data-short="Авг" data-volume="114.3" data-change="-6.5"><th scope="row"><a href="https://www.autostat.ru/press-releases/63032/">Август</a></th><td>114,3</td><td>−6,5%</td></tr>
+                <tr data-month="Сентябрь" data-short="Сен" data-volume="122.8" data-change="0.1"><th scope="row"><a href="https://www.autostat.ru/news/63283/">Сентябрь</a></th><td>122,8</td><td>+0,1%</td></tr>
+                <tr data-month="Октябрь" data-short="Окт" data-volume="132.9" data-change="-19.8"><th scope="row"><a href="https://www.autostat.ru/press-releases/63433/">Октябрь</a></th><td>132,9</td><td>−19,8%</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </figure>
+      </div>
+    </section>
+
+    <div class="shell takeaway">
+      <div class="takeaway-bar" aria-hidden="true"></div>
+      <div><h2>Первая проверка — путь от заявки до продления</h2><p>Связать заявки, счета и оплаты, затем выяснить, какие данные АБР клиенты используют в работе. Это даст основание выбирать между улучшением сопровождения и запуском нового предложения.</p></div>
+    </div>
+
+    <section class="shell section products" id="products" aria-labelledby="products-title">
+      <div class="section-heading">
+        <p class="eyebrow">Бизнес-модель</p>
+        <h2 id="products-title">Что продаёт АБР</h2>
+        <p>Публичные предложения и цены. Вклад каждого направления в выручку и прибыль предстоит измерить.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product">
+          <p class="product-group">Медиа</p>
+          <h3>Подписка</h3>
+          <p class="price">29&nbsp;000 <span>₽ / год</span></p>
+          <p>Электронный журнал, архив и закрытая статистика. Печатная версия — 23&nbsp;500&nbsp;₽, комплект — 46&nbsp;600&nbsp;₽.</p>
+          <a href="https://abreview.ru/about/sub/">Тарифы АБР ↗</a>
+        </article>
+        <article class="product">
+          <p class="product-group">Исследования</p>
+          <h3>Рейтинг холдингов</h3>
+          <p class="price">201&nbsp;000 <span>₽</span></p>
+          <p>Полный годовой отчёт по Топ‑200. Среди показателей — продажи, выручка и выработка сервиса.</p>
+          <a href="https://abreview.ru/researches/rating/">Карточка отчёта ↗</a>
+        </article>
+        <article class="product">
+          <p class="product-group">Исследования</p>
+          <h3>База дилеров</h3>
+          <p class="price">82&nbsp;000 <span>₽</span></p>
+          <p>Срез на 1 октября 2026 года. По данным АБР, в базе 4&nbsp;664 действующих шоурума и 1&nbsp;824 СТО.</p>
+          <a href="https://abreview.ru/researches/base/">Состав базы ↗</a>
+        </article>
+        <article class="product">
+          <p class="product-group">Реклама</p>
+          <h3>Размещение</h3>
+          <p class="price">По запросу</p>
+          <p>Предложения для сайта и журнала. Публичная страница описывает аудиторию и предлагает подобрать формат.</p>
+          <a href="https://abreview.ru/about/adv/">Рекламные возможности ↗</a>
+        </article>
+      </div>
+      <div class="market-context">
+        <strong>+3,7%</strong>
+        <p>Продажи новых легковых автомобилей в январе–октябре 2026 выросли год к году, хотя в октябре сократились на 19,8%. Оба среза полезны для клиентского брифинга. Влияние рынка на бюджет подписчиков АБР пока неизвестно.</p>
+        <a href="https://www.autostat.ru/press-releases/63433/">Отчёт АВТОСТАТа ↗</a>
+      </div>
+    </section>
+
+    <section class="section band" id="swot" aria-labelledby="swot-title">
+      <div class="shell">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow">Стратегическая оценка</p><h2 id="swot-title">SWOT издательства</h2><p>Сильные и слабые стороны внутри АБР, возможности и угрозы на рынке.</p></div>
+          <div class="segmented filter" role="group" aria-label="Фильтр SWOT" hidden>
+            <button type="button" data-evidence="all" aria-pressed="true">Все</button>
+            <button type="button" data-evidence="fact" aria-pressed="false">Наблюдения</button>
+            <button type="button" data-evidence="hypothesis" aria-pressed="false">Гипотезы</button>
+          </div>
+        </div>
+        <p id="filter-status" class="visually-hidden" role="status"></p>
+        <div class="swot-grid">
+          <article class="swot-card">
+            <div class="swot-title"><span aria-hidden="true">S</span><h3>Сильные стороны</h3></div>
+            <div class="evidence" data-kind="fact"><span class="evidence-label">Наблюдение</span><p>Рейтинг холдингов и база дилеров продаются отдельно. Электронная подписка включает архив и закрытую статистику.</p><a href="https://abreview.ru/about/sub/">Подписка АБР ↗</a></div>
+            <div class="evidence" data-kind="hypothesis"><span class="evidence-label">Гипотеза</span><p>Дилерские группы используют данные для сравнения сетей и регионов. Попросить клиентов привести последний пример решения.</p></div>
+          </article>
+          <article class="swot-card">
+            <div class="swot-title"><span aria-hidden="true">W</span><h3>Слабые стороны</h3></div>
+            <div class="evidence" data-kind="fact"><span class="evidence-label">Наблюдение</span><p>Из архива разные выпуски ведут на одну форму подписки. В описании рейтинга для поиска остался Топ‑55, на странице заявлен Топ‑200.</p><a href="https://abreview.ru/archive/">Архив ↗</a> · <a href="https://abreview.ru/researches/rating/">Рейтинг ↗</a></div>
+            <div class="evidence" data-kind="hypothesis"><span class="evidence-label">Гипотеза</span><p>Часть клиентов теряется после заявки. Проверить долю счетов и оплат, время ответа и причины незавершённых сделок.</p></div>
+          </article>
+          <article class="swot-card">
+            <div class="swot-title"><span aria-hidden="true">O</span><h3>Возможности</h3></div>
+            <div class="evidence" data-kind="fact"><span class="evidence-label">Наблюдение</span><p>Automotive News предлагает групповой доступ с единым счётом. GoAutoNews Premium выпускает еженедельную рассылку для авторитейла.</p><a href="https://help.autonews.com/hc/en-us/articles/15018525870740-Corporate-Group-Subscriptions">Automotive News ↗</a> · <a href="https://www.goautomedia.net/goautonews-premium">GoAutoNews ↗</a></div>
+            <div class="evidence" data-kind="hypothesis"><span class="evidence-label">Гипотеза</span><p>Холдингам может быть полезен доступ команды к аналитике и короткий брифинг по изменениям сетей. Проверить на текущих клиентах.</p></div>
+          </article>
+          <article class="swot-card">
+            <div class="swot-title"><span aria-hidden="true">T</span><h3>Угрозы</h3></div>
+            <div class="evidence" data-kind="fact"><span class="evidence-label">Наблюдение</span><p>АВТОСТАТ предлагает отчёты по рынку и мониторинг дилерских контрактов. У покупателей отраслевых данных есть альтернативы.</p><a href="https://www.autostat.ru/research/">Исследования АВТОСТАТа ↗</a></div>
+            <div class="evidence" data-kind="hypothesis"><span class="evidence-label">Гипотеза</span><p>При пересмотре бюджета часть покупателей может отказаться от АБР. Спросить ушедших клиентов, какие источники и задачи они сохранили.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section" id="gap" aria-labelledby="gap-title">
+      <div class="section-heading"><p class="eyebrow">Измерение разрыва</p><h2 id="gap-title">GAP для платных клиентов</h2><p>Для каждого показателя нужны исходное значение, цель к дате, размер разрыва и ответственный за действие.</p></div>
+      <div class="gap-grid">
+        <div class="gap-metrics">
+          <article><h3>Продления</h3><p>Запросить даты окончания, повторные оплаты и тарифы за 12 месяцев. Договориться, как учитывать поздние продления.</p></article>
+          <article><h3>Заявки → счета → оплаты</h3><p>Связать заявки с результатом сделки. Сравнить долю оплат и скорость ответа по каналам и продуктам.</p></article>
+          <article><h3>Использование аналитики</h3><p>Проверить, кто открывает закрытые разделы и какие данные влияют на рабочие решения клиентов.</p></article>
+          <article><h3>Экономика направлений</h3><p>Запросить выручку и прямые затраты по подписке, исследованиям и рекламе. Согласовать цель для каждого направления.</p></article>
+        </div>
+        <form class="calculator" id="renewal-form" aria-labelledby="calc-title">
+          <p class="eyebrow">Сценарный расчёт</p>
+          <h3 id="calc-title">Рассчитать разрыв по продлениям</h3>
+          <p class="calc-note">Введите свои значения за один период. Поля пустые, поскольку данные АБР пока недоступны.</p>
+          <div class="fields">
+            <label for="expired">Подписки с истёкшим сроком<input id="expired" name="expired" type="number" min="1" step="1" inputmode="numeric" placeholder="100" required></label>
+            <label for="renewed">Из них продлили<input id="renewed" name="renewed" type="number" min="0" step="1" inputmode="numeric" placeholder="60" required></label>
+            <label for="target">Целевая доля, %<input id="target" name="target" type="number" min="0" max="100" step="any" inputmode="decimal" placeholder="70" required></label>
+          </div>
+          <div class="calc-actions">
+            <button type="submit" class="button button-primary" disabled>Рассчитать</button>
+            <button type="button" class="text-button" data-example hidden>Подставить пример</button>
+          </div>
+          <output id="renewal-result" for="expired renewed target" aria-live="polite">Введите количество подписок и целевую долю.</output>
+          <noscript><p>Формула доли продлений — число продлений ÷ число истёкших подписок × 100%.</p></noscript>
+        </form>
+      </div>
+    </section>
+
+    <section class="section band" id="plan" aria-labelledby="plan-title">
+      <div class="shell">
+        <div class="section-heading"><p class="eyebrow">Проверка гипотез</p><h2 id="plan-title">Первые 30 дней</h2><p>Рабочий план для обсуждения с командой АБР. Итог месяца — исходные показатели, проверенные причины и один пилот.</p></div>
+        <div class="plan-grid">
+          <article><p class="eyebrow">Дни 1–7</p><h3>Восстановить путь клиента</h3><p>Согласовать приоритет с руководителем. Проследить несколько заявок от обращения до оплаты, выдачи доступа и продления.</p></article>
+          <article><p class="eyebrow">Дни 8–20</p><h3>Разобрать причины</h3><p>Сверить продления по тарифам. Провести 8–12 разговоров с действующими и ушедшими клиентами. Спросить, какое решение им помогли принять данные АБР.</p></article>
+          <article><p class="eyebrow">Дни 21–30</p><h3>Запустить один пилот</h3><p>Если заявки зависают, замерить время ответа и долю выставленных счетов. Если клиентам нужны данные по сетям, показать один брифинг и проверить, для каких решений его используют и готовы ли платить за регулярный выпуск.</p></article>
+        </div>
+        <details class="method" id="sources">
+          <summary>Методика, источники и ограничения</summary>
+          <div>
+            <p>Цены, состав продуктов и охват базы взяты с сайта АБР. Авторынок — ряд АВТОСТАТа на данных АО «ППК» с округлением объёмов до 0,1 тыс. Для сентября использована уточнённая публикация. Периоды сравнения указаны на графике.</p>
+            <p>OpenSEO выборочно проверил главную и страницы платных продуктов. Поисковые показы, пользовательские действия и финансовые данные АБР требуют доступа к кабинетам издательства.</p>
+            <p>Для проверки причин нужны данные CRM, интервью и наблюдение за процессом. Для оценки поведения на сайте пригодятся Яндекс Метрика, Вебмастер и Google Search Console.</p>
+            <ul>
+              <li><a href="https://business.gov.au/planning/business-plans/do-a-swot-analysis">Методика SWOT · business.gov.au ↗</a></li>
+              <li><a href="https://www.iiba.org/contentassets/7f255980c8b542a5b4ab868b29afe792/how-to-perform-gap-analysis-infographic-condensed.pdf">Методика GAP · IIBA ↗</a></li>
+              <li><a href="https://abreview.ru/researches/rating/">Страница рейтинга · проверено метаописание 15 ноября 2026 ↗</a></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="shell"><p>АвтоБизнесРевю · независимый обзор по открытым данным</p><a href="#main">Наверх ↑</a></div></footer>
+</body>
+</html>
