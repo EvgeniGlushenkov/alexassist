@@ -240,3 +240,38 @@ nav{gap:19px}.header-inner{gap:14px}.header .brand-label{font-size:13px}
 @media(max-width:700px){.nikkei-grid{grid-template-columns:1fr;gap:8px}.nikkei-case{padding:20px}.nikkei-case h3{font-size:22px}}
 @media(max-width:440px){.catalog-tools{grid-template-columns:1fr}.catalog-tools label:first-child{grid-column:auto}}
 @media print{.country-group[hidden]{display:block!important}.country-title{break-after:avoid}.nikkei-case{padding:12pt}.nikkei-grid{display:block}}
+
+
+/* Palette and typography from the career site. */
+:root {
+  --ink: #12140f;
+  --muted: #555852;
+  --blue: #13a7e5;
+  --blue-dark: #075878;
+  --navy: #12140f;
+  --light: #f8f8f6;
+  --line: #dedfd9;
+  --blue-soft: #aee4f8;
+  --green-soft: #aef0c8;
+  --font-sans: Manrope, Roboto, Arial, sans-serif;
+  --font-mono: "DM Mono", ui-monospace, monospace;
+}
+body { font-family: var(--font-sans); background: var(--light); }
+.header, .hero { background: var(--light); color: var(--ink); }
+.hero h1 { font-size: clamp(2rem, 1rem + 4vw, 4.75rem); overflow-wrap: anywhere; }
+.hero-lead { color: var(--blue-dark); font-weight: 750; }
+.hero .hero-date, .hero .hero-note, .hero .hero-stats span,
+.hero .hero-stats b { color: var(--muted); }
+.hero-date span { background: #08dd66; }
+.eyebrow, .evidence-label, .analogue-number, nav a { font-family: var(--font-mono); }
+.button, .print-button { border-radius: 999px; }
+.hero .button-primary, .button-primary { background: var(--ink); color: var(--white); }
+.hero .button-primary:hover, .button-primary:hover { background: var(--blue-soft); color: var(--ink); }
+.market-panel { border-color: var(--line); box-shadow: none; }
+.reference-picks, .nikkei-case { background: var(--blue-soft); }
+.germany-case { background: var(--green-soft); border-top-color: #14864a; }
+.nikkei-case > p, .nikkei-case li { max-width: 78ch; }
+.germany-case li + li { margin-block-start: .5rem; }
+.country-title { background: var(--white); }
+.chart-bar { background: #72c8eb; }
+.tag { background: var(--light); border-color: var(--line); color: var(--ink); }
