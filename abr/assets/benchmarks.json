@@ -9,7 +9,10 @@
     "buyer": "Руководство и команды автобизнеса",
     "abrHypothesis": "Командная подписка с подборками по должностям.",
     "dependency": "Нужны управление доступом, правила лицензии и работа с продлениями.",
-    "source": "https://help.autonews.com/hc/en-us/articles/15018525870740-Corporate-Group-Subscriptions"
+    "source": "https://help.autonews.com/hc/en-us/articles/15018525870740-Corporate-Group-Subscriptions",
+    "id": 1,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "GoAutoNews Premium",
@@ -21,7 +24,10 @@
     "buyer": "Руководители дилерских компаний",
     "abrHypothesis": "Короткий еженедельный обзор с последствиями для дилера.",
     "dependency": "Регулярность и прикладная ценность должны оправдывать время читателя.",
-    "source": "https://www.goautomedia.net/goautonews-premium"
+    "source": "https://www.goautomedia.net/goautonews-premium",
+    "id": 2,
+    "country": "Австралия",
+    "verified": "2026-11-15"
   },
   {
     "name": "Automotive Management / AM Live",
@@ -33,7 +39,10 @@
     "buyer": "Дилеры и поставщики решений",
     "abrHypothesis": "Закрытые обсуждения исследований и управленческих кейсов.",
     "dependency": "Нужны модерация, релевантный состав и самостоятельная экономика мероприятий.",
-    "source": "https://automotivemanagementlive.co.uk/"
+    "source": "https://automotivemanagementlive.co.uk/",
+    "id": 3,
+    "country": "Великобритания",
+    "verified": "2026-11-15"
   },
   {
     "name": "Autocar Professional",
@@ -45,7 +54,10 @@
     "buyer": "Участники автомобильной цепочки",
     "abrHypothesis": "Проверить отдельные продукты о сервисе, компонентах и коммерческом транспорте.",
     "dependency": "Расширение тем требует новой экспертизы и подтверждённого спроса.",
-    "source": "https://www.autocarpro.in/aboutus"
+    "source": "https://www.autocarpro.in/aboutus",
+    "id": 4,
+    "country": "Индия",
+    "verified": "2026-11-15"
   },
   {
     "name": "Gasgoo",
@@ -57,7 +69,10 @@
     "buyer": "Производители, поставщики и закупщики",
     "abrHypothesis": "Каталог решений с проверенными кейсами и подбором поставщика.",
     "dependency": "Нужны верификация участников и разделение рекламы и независимой оценки.",
-    "source": "https://autonews.gasgoo.com/about"
+    "source": "https://autonews.gasgoo.com/about",
+    "id": 5,
+    "country": "Китай",
+    "verified": "2026-11-15"
   },
   {
     "name": "Fleet Europe",
@@ -69,7 +84,10 @@
     "buyer": "Управляющие автопарками",
     "abrHypothesis": "Обзор закупки, эксплуатации и обновления корпоративного парка.",
     "dependency": "Это отдельный покупатель. Его задачи нужно проверить интервью.",
-    "source": "https://discover.fleeteurope.com/fleet-and-mobility-interests"
+    "source": "https://discover.fleeteurope.com/fleet-and-mobility-interests",
+    "id": 6,
+    "country": "Европа",
+    "verified": "2026-11-15"
   },
   {
     "name": "MarkLines",
@@ -81,7 +99,10 @@
     "buyer": "Производители, поставщики, аналитики",
     "abrHypothesis": "Связать архив АБР, рейтинги, бренды и профили компаний.",
     "dependency": "Нужны единые идентификаторы, структура данных и история изменений.",
-    "source": "https://www.marklines.com/en/service"
+    "source": "https://www.marklines.com/en/service",
+    "id": 7,
+    "country": "Япония",
+    "verified": "2026-11-15"
   },
   {
     "name": "JATO Dynamics",
@@ -93,7 +114,10 @@
     "buyer": "Производители, ритейл, лизинг",
     "abrHypothesis": "Мониторинг цен и условий по моделям и регионам.",
     "dependency": "Необходимы непрерывный сбор данных и сопоставление комплектаций.",
-    "source": "https://www.jato.com/solutions"
+    "source": "https://www.jato.com/solutions",
+    "id": 8,
+    "country": "Великобритания",
+    "verified": "2026-11-15"
   },
   {
     "name": "AutoIntelligence Suite",
@@ -105,7 +129,10 @@
     "buyer": "Стратегические и аналитические команды",
     "abrHypothesis": "Разбирать последствия событий для сетей и бизнеса клиентов.",
     "dependency": "Сценарии требуют методики. Точность прогноза нельзя обещать без проверки.",
-    "source": "https://www.mobilityglobal.com/en-us/products/auto-intelligence-suite"
+    "source": "https://www.mobilityglobal.com/en-us/products/auto-intelligence-suite",
+    "id": 9,
+    "country": "Международные",
+    "verified": "2026-11-15"
   },
   {
     "name": "Autovista / J.D. Power",
@@ -117,7 +144,10 @@
     "buyer": "Лизинг, банки, производители и дилеры",
     "abrHypothesis": "Аналитика ликвидности и стоимости автомобилей с пробегом.",
     "dependency": "Нужны цены сделок, пробеги, возраст и репрезентативная выборка.",
-    "source": "https://www.jdpower.com/business/residual-value-intelligence/"
+    "source": "https://www.jdpower.com/business/residual-value-intelligence/",
+    "id": 10,
+    "country": "Европа",
+    "verified": "2026-11-15"
   },
   {
     "name": "Urban Science / NetworkPlanner",
@@ -129,7 +159,10 @@
     "buyer": "Производители и дистрибьюторы",
     "abrHypothesis": "Карта дилеров, история открытий и закрытий, присутствие брендов.",
     "dependency": "Карта возможна на базе АБР. Для оценки потенциала нужны спрос и геоданные.",
-    "source": "https://lp.urbanscience.com/build-your-best-network"
+    "source": "https://lp.urbanscience.com/build-your-best-network",
+    "id": 11,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "vAuto / Provision",
@@ -141,7 +174,10 @@
     "buyer": "Дилеры и руководители автомобилей с пробегом",
     "abrHypothesis": "Отчёты о старении склада и рисках оборачиваемости.",
     "dependency": "Потребуются данные склада и интеграции с учётными системами дилера.",
-    "source": "https://www.vauto.com/products/provision/"
+    "source": "https://www.vauto.com/products/provision/",
+    "id": 12,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "Vincentric",
@@ -153,7 +189,10 @@
     "buyer": "Автопарки, лизинг и корпоративные продажи",
     "abrHypothesis": "Калькулятор полной стоимости владения для корпоративного клиента.",
     "dependency": "Нужны надёжные локальные данные о расходах и остаточной стоимости.",
-    "source": "https://www.vincentric.com/Home/Fleet-Solutions/Dynamic-Cost-to-Own-Fleet-Edition"
+    "source": "https://www.vincentric.com/Home/Fleet-Solutions/Dynamic-Cost-to-Own-Fleet-Edition",
+    "id": 13,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "Benchmark Mineral Intelligence",
@@ -165,7 +204,10 @@
     "buyer": "Производители, инвесторы и закупщики",
     "abrHypothesis": "Отдельное исследование экономики электромобильности.",
     "dependency": "Пример близок к цепочке автоотрасли, но требует новой предметной экспертизы АБР.",
-    "source": "https://www.benchmarkminerals.com/intelligence"
+    "source": "https://www.benchmarkminerals.com/intelligence",
+    "id": 14,
+    "country": "Великобритания",
+    "verified": "2026-11-15"
   },
   {
     "name": "АВТОСТАТ",
@@ -177,7 +219,10 @@
     "buyer": "Дилеры, производители и поставщики",
     "abrHypothesis": "Проверить нишу аналитики экономики дилеров и структуры холдингов.",
     "dependency": "Уникальность АБР пока не доказана. Сравнить реальные покупки и задачи клиентов.",
-    "source": "https://www.autostat.ru/research/"
+    "source": "https://www.autostat.ru/research/",
+    "id": 15,
+    "country": "Россия",
+    "verified": "2026-11-15"
   },
   {
     "name": "NADA 20 Group",
@@ -189,7 +234,10 @@
     "buyer": "Собственники и руководители дилерских компаний",
     "abrHypothesis": "Регулярная сравнительная аналитика и обсуждение результатов.",
     "dependency": "Нужны добровольная передача данных, единые определения и достаточная группа.",
-    "source": "https://composite.nada.org/"
+    "source": "https://composite.nada.org/",
+    "id": 16,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "Skift Research",
@@ -201,7 +249,10 @@
     "buyer": "Стратегические и коммерческие команды",
     "abrHypothesis": "Пакет исследований с регулярным разбором и вопросами аналитику.",
     "dependency": "Нужно ограничить объём сопровождения и учитывать часы аналитика.",
-    "source": "https://research.skift.com/subscribe/"
+    "source": "https://research.skift.com/subscribe/",
+    "id": 17,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "SONAR",
@@ -213,7 +264,10 @@
     "buyer": "Грузоотправители и логистические компании",
     "abrHypothesis": "Уведомления о событиях по избранным компаниям, брендам и регионам.",
     "dependency": "Полезность сигнала определяется своевременностью и связью с решением клиента.",
-    "source": "https://gosonar.com/"
+    "source": "https://gosonar.com/",
+    "id": 18,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "CoStar with STR Benchmark",
@@ -225,7 +279,10 @@
     "buyer": "Владельцы и операторы гостиниц",
     "abrHypothesis": "Сравнение дилеров по масштабу, брендам, регионам и структуре бизнеса.",
     "dependency": "Нужны правила агрегации и защита показателей отдельных участников.",
-    "source": "https://www.costar.com/products/str-benchmark"
+    "source": "https://www.costar.com/products/str-benchmark",
+    "id": 19,
+    "country": "Международные",
+    "verified": "2026-11-15"
   },
   {
     "name": "Cirium / Fleets Analyzer",
@@ -237,7 +294,10 @@
     "buyer": "Авиакомпании, лизинг и аналитики",
     "abrHypothesis": "История дилерского центра, его брендов, владельцев и статуса.",
     "dependency": "Шоурум, контракт, юридическое лицо и холдинг нужно учитывать отдельно.",
-    "source": "https://www.cirium.com/analytics-services/fleets-analyzer/"
+    "source": "https://www.cirium.com/analytics-services/fleets-analyzer/",
+    "id": 20,
+    "country": "Международные",
+    "verified": "2026-11-15"
   },
   {
     "name": "ICIS",
@@ -249,7 +309,10 @@
     "buyer": "Закупщики, производители и трейдеры",
     "abrHypothesis": "Индикатор цен сервиса или других издержек дилера.",
     "dependency": "Потребуются опубликованная методика, стабильная выборка и контроль пересмотров.",
-    "source": "https://www.icis.com/explore/services/pricing/"
+    "source": "https://www.icis.com/explore/services/pricing/",
+    "id": 21,
+    "country": "Международные",
+    "verified": "2026-11-15"
   },
   {
     "name": "PitchBook",
@@ -261,7 +324,10 @@
     "buyer": "Инвесторы, банки и корпоративные команды",
     "abrHypothesis": "База холдингов, связанных компаний и подтверждённых сделок автобизнеса.",
     "dependency": "Нужно разделять подтверждённые факты, сообщения сторон и неподтверждённые сведения.",
-    "source": "https://pitchbook.com/platform-data/companies"
+    "source": "https://pitchbook.com/platform-data/companies",
+    "id": 22,
+    "country": "США",
+    "verified": "2026-11-15"
   },
   {
     "name": "Wood Mackenzie / Lens",
@@ -273,6 +339,279 @@
     "buyer": "Стратегические и инвестиционные команды",
     "abrHypothesis": "Сценарии изменения продаж, маржи и загрузки сервиса.",
     "dependency": "Калькулятор чувствительности возможен раньше прогноза. Допущения должны быть видны.",
-    "source": "https://www.woodmac.com/lens/"
+    "source": "https://www.woodmac.com/lens/",
+    "id": 23,
+    "country": "Международные",
+    "verified": "2026-11-15"
+  },
+  {
+    "name": "Nikkei BP / Nikkei Automotive + xTECH",
+    "country": "Япония",
+    "geography": "Япония",
+    "sector": "auto",
+    "model": "media",
+    "idea": "Журнал и цифровая подписка",
+    "offering": "Отраслевой журнал о технологиях автомобилей и пакет с платным xTECH: технические статьи, поиск по архиву и цифровые материалы.",
+    "buyer": "Инженеры и руководители автопроизводителей",
+    "abrHypothesis": "Объединить журнал, архив, отраслевые досье и регулярные обновления в понятные пакеты доступа.",
+    "dependency": "Аудитория Nikkei сильнее ориентирована на разработку автомобилей; для АБР содержание нужно строить вокруг решений дилеров.",
+    "source": "https://www.nikkeibpm.co.jp/item/nat/983/xtech.html",
+    "verified": "2026-11-17",
+    "id": 24
+  },
+  {
+    "name": "AAA DATA",
+    "country": "Франция",
+    "geography": "Франция",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Данные как коммерческий сервис",
+    "offering": "Продукты на основе автомобильных данных, включая B2B-лиды по обновлению автопарков и API квалификации данных.",
+    "buyer": "Автобизнес, маркетинг и финансовые организации",
+    "abrHypothesis": "Проверить спрос на сигналы об изменениях компаний и сетей.",
+    "dependency": "Нужны права на данные, контроль качества и доказанная полезность сигналов.",
+    "source": "https://www.aaa-data.fr/solutions/",
+    "verified": "2026-11-17",
+    "id": 25
+  },
+  {
+    "name": "Quintegia / Research",
+    "country": "Италия",
+    "geography": "Италия",
+    "sector": "auto",
+    "model": "benchmark",
+    "idea": "Исследования дилеров",
+    "offering": "Исследования дилерских сетей, удовлетворённости дилеров, поведения клиентов и послепродажного обслуживания.",
+    "buyer": "Дилерские группы и автопроизводители",
+    "abrHypothesis": "Развивать рейтинг АБР в серию исследований сетей, сервиса и отношений дилер — бренд.",
+    "dependency": "Нужны сопоставимая выборка, повторяемая методика и участие дилеров.",
+    "source": "https://www.quintegia.it/en/activities/",
+    "verified": "2026-11-17",
+    "id": 26
+  },
+  {
+    "name": "MSI / Datos de mercado",
+    "country": "Испания",
+    "geography": "Испания",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Рынок и потенциал сервиса",
+    "offering": "Базы и отчёты о новых и подержанных автомобилях, регистрациях и потенциале послепродажного рынка.",
+    "buyer": "Импортёры, дилеры и сервисные компании",
+    "abrHypothesis": "Добавить к базе дилеров оценку регионального потенциала сервиса.",
+    "dependency": "Потребуется внешний источник данных о парке и прозрачная методика оценки.",
+    "source": "https://msiberia.org/datos-de-mercado/",
+    "verified": "2026-11-17",
+    "id": 27
+  },
+  {
+    "name": "DBI IT / Bilstatistik.dk",
+    "country": "Дания",
+    "geography": "Дания",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Ежедневная статистика",
+    "offering": "Информация о зарегистрированных в Дании транспортных средствах, рынке и компаниях-владельцах; ежедневное обновление.",
+    "buyer": "Автобизнес и аналитики рынка",
+    "abrHypothesis": "Продавать регулярно обновляемые срезы вместо разовой выгрузки.",
+    "dependency": "Частота обновления должна соответствовать источникам и задачам клиента.",
+    "source": "https://www.dbiit.dk/produkter-og-services/bilstatistik-dk/",
+    "verified": "2026-11-17",
+    "id": 28
+  },
+  {
+    "name": "Vroom",
+    "country": "Швеция",
+    "geography": "Швеция",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Региональная аналитика",
+    "offering": "Данные об автомобильном рынке и продажах конечным покупателям; аналитика своего региона в веб-сервисе.",
+    "buyer": "Дилеры и маркетинговые команды",
+    "abrHypothesis": "Сравнивать присутствие бренда и дилера по регионам в регулярном кабинете.",
+    "dependency": "Нельзя приравнивать регистрации к продажам без согласованного определения.",
+    "source": "https://web.vroom.nu/",
+    "verified": "2026-11-17",
+    "id": 29
+  },
+  {
+    "name": "OFV Statistikk",
+    "country": "Норвегия",
+    "geography": "Норвегия",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Открытая витрина + подписка",
+    "offering": "Открытые регистрационные показатели и подписка на подробные исторические данные, парк, импорт и смену владельцев.",
+    "buyer": "Участники рынка, аналитики и СМИ",
+    "abrHypothesis": "Оставить краткие показатели открытыми, продавать историю и подробные срезы.",
+    "dependency": "Платная часть должна решать отдельную задачу, а не просто закрывать ранее доступные новости.",
+    "source": "https://ofv.no/statistikk",
+    "verified": "2026-11-17",
+    "id": 30
+  },
+  {
+    "name": "Canadian Black Book",
+    "country": "Канада",
+    "geography": "Канада",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Остаточная стоимость",
+    "offering": "Оценки автомобилей, индекс оптовых цен и сценарные прогнозы остаточной стоимости.",
+    "buyer": "Дилеры, автокредитование и лизинг",
+    "abrHypothesis": "Проверить партнёрский продукт о риске стоимости для дилеров и лизинга.",
+    "dependency": "Самостоятельная оценочная модель требует транзакционных данных и проверки ошибок прогноза.",
+    "source": "https://www.canadianblackbook.com/",
+    "verified": "2026-11-17",
+    "id": 31
+  },
+  {
+    "name": "Lightstone / AutoStats и SmartMapping",
+    "country": "ЮАР",
+    "geography": "ЮАР",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Статистика и территория дилера",
+    "offering": "Анализ продаж новых автомобилей на основе naamsa и пространственная аналитика продаж, дилерских точек и демографии.",
+    "buyer": "Дилерские группы и автопроизводители",
+    "abrHypothesis": "Развивать монитор сетей в инструмент выбора территории и оценки конкуренции.",
+    "dependency": "Нужны локальные продажи и характеристики территории, а не только координаты точек.",
+    "source": "https://corporate.lightstone.co.za/",
+    "verified": "2026-11-17",
+    "id": 32
+  },
+  {
+    "name": "Automotive Business / Estudos",
+    "country": "Бразилия",
+    "geography": "Бразилия",
+    "sector": "auto",
+    "model": "media",
+    "idea": "Медиа и тематические исследования",
+    "offering": "Отраслевые исследования о цифровизации, электрификации, ИИ, ESG и тенденциях мобильности.",
+    "buyer": "Руководители автобизнеса и поставщики",
+    "abrHypothesis": "Дополнять отраслевую журналистику регулярными тематическими исследованиями.",
+    "dependency": "Разделять редакционные выводы и интересы партнёров исследования.",
+    "source": "https://www.automotivebusiness.com.br/estudos",
+    "verified": "2026-11-17",
+    "id": 33
+  },
+  {
+    "name": "SimDataGroup / SimIndex",
+    "country": "Мексика",
+    "geography": "Мексика",
+    "sector": "auto",
+    "model": "benchmark",
+    "idea": "Индекс по данным дилеров",
+    "offering": "Анализ автомобильного рынка совместно с AMDA, основанный на сборе и стандартизации данных дилерских DMS.",
+    "buyer": "Дилерские группы и отраслевые объединения",
+    "abrHypothesis": "Создать добровольную панель дилеров для сравнения операционных показателей.",
+    "dependency": "Потребуются соглашения, интеграции, обезличивание и единый словарь метрик.",
+    "source": "https://www.amda.mx/wp-content/uploads/amda_simdatagroup_250428.pdf",
+    "verified": "2026-11-17",
+    "id": 34
+  },
+  {
+    "name": "VWE / Market Performance Manager",
+    "country": "Нидерланды",
+    "geography": "Нидерланды",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Показатели до уровня филиала",
+    "offering": "Рыночная статистика связывается с дилерскими территориями; отчёты и кабинет для анализа долей рынка и показателей филиалов.",
+    "buyer": "Дилеры и владельцы сетей",
+    "abrHypothesis": "Добавить в монитор сетей сравнение территорий и динамику присутствия.",
+    "dependency": "Доли продаж нельзя рассчитывать только по числу дилерских точек.",
+    "source": "https://vwe.nl/marktinzicht/",
+    "verified": "2026-11-17",
+    "id": 35
+  },
+  {
+    "name": "auto-i-dat",
+    "country": "Швейцария",
+    "geography": "Швейцария",
+    "sector": "auto",
+    "model": "operations",
+    "idea": "Справочник в рабочем процессе",
+    "offering": "База автомобилей швейцарского рынка и программы для оценки подержанных машин, прогнозов и подготовки предложений.",
+    "buyer": "Дилеры, автопарки, страховщики и ремонтные компании",
+    "abrHypothesis": "Использовать единый справочник компаний и точек в отчётах и интеграциях АБР.",
+    "dependency": "Это аналог организации данных, а не готовый повод выходить в оценку автомобилей.",
+    "source": "https://www.auto-i-dat.ch/produkte",
+    "verified": "2026-11-17",
+    "id": 36
+  },
+  {
+    "name": "IBRM SAMAR / MotoTrendy",
+    "country": "Польша",
+    "geography": "Польша",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Медиа и аналитическое приложение",
+    "offering": "Отраслевые новости и BI-приложение для анализа польского рынка легковых и коммерческих автомобилей по стране и регионам.",
+    "buyer": "Автопроизводители, дилеры и аналитики",
+    "abrHypothesis": "Связать статьи АБР с интерактивными таблицами и историей показателей.",
+    "dependency": "Нужны единые идентификаторы, права доступа и воспроизводимые расчёты.",
+    "source": "https://www.samar.pl/",
+    "verified": "2026-11-17",
+    "id": 37
+  },
+  {
+    "name": "CARDATA",
+    "country": "Турция",
+    "geography": "Турция",
+    "sector": "auto",
+    "model": "operations",
+    "idea": "Оценка и сравнение автомобилей",
+    "offering": "Приложения для оценки подержанных автомобилей, каталог характеристик, цены новых машин и сравнение моделей.",
+    "buyer": "Дилеры, автопарки, банки и страховщики",
+    "abrHypothesis": "Проверить востребованность сравнительных карточек брендов и предложения рынка.",
+    "dependency": "АБР не располагает подтверждённой оценочной моделью; для ценовых функций нужен партнёр.",
+    "source": "https://www.cardata.com.tr/",
+    "verified": "2026-11-17",
+    "id": 38
+  },
+  {
+    "name": "Thailand Automotive Institute / AIU",
+    "country": "Таиланд",
+    "geography": "Таиланд",
+    "sector": "auto",
+    "model": "data",
+    "idea": "Отраслевой информационный центр",
+    "offering": "Статистика производства, продаж и внешней торговли, временные ряды и база участников цепочки поставок.",
+    "buyer": "Производители, поставщики и исследователи",
+    "abrHypothesis": "Соединить справочник участников с динамикой рынка в одном интерфейсе.",
+    "dependency": "Институциональный сервис не доказывает жизнеспособность коммерческой подписки АБР.",
+    "source": "https://aiu.thaiauto.or.th/",
+    "verified": "2026-11-17",
+    "id": 39
+  },
+  {
+    "name": "DealStreetAsia / Data Vantage",
+    "country": "Сингапур",
+    "geography": "Сингапур",
+    "sector": "adjacent",
+    "model": "data",
+    "idea": "Новости, сделки и компании",
+    "offering": "Аналитика частного капитала: раунды финансирования, владельцы, финансовые данные компаний, сравнения и уведомления.",
+    "buyer": "Инвесторы и специалисты по сделкам",
+    "abrHypothesis": "Связать новости о дилерских холдингах с карточками компаний и историей изменений.",
+    "dependency": "Проект входит в Nikkei; это отдельный продукт, но не независимая от Nikkei группа. Нужна проверка корпоративных событий.",
+    "source": "https://www.dealstreetasia.com/data-vantage/",
+    "verified": "2026-11-17",
+    "id": 40
+  },
+  {
+    "name": "DAT / SilverDAT",
+    "country": "Германия",
+    "geography": "Германия",
+    "sector": "auto",
+    "model": "operations",
+    "idea": "Интеграции в системы дилера",
+    "offering": "Семейство SilverDAT связано с дилерскими и сервисными программами через сертифицированные интерфейсы.",
+    "buyer": "Дилеры, сервисы и поставщики ПО",
+    "abrHypothesis": "Предлагать проверенные данные АБР в привычных рабочих системах клиентов.",
+    "dependency": "Интеграции имеют смысл после стандартизации данных и появления платного спроса.",
+    "source": "https://www.dat.de/schnittstellenpartner/",
+    "verified": "2026-11-17",
+    "id": 41
   }
 ]

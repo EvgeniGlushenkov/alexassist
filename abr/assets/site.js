@@ -170,6 +170,8 @@ print.hidden = false;
 const catalogue = [...document.querySelectorAll('.analogue')];
 const searchInput = document.querySelector('#analogue-search');
 const sectorFilter = document.querySelector('#sector-filter');
+const countryFilter = document.querySelector('#country-filter');
+const countryGroups = [...document.querySelectorAll('.country-group')];
 const modelFilter = document.querySelector('#model-filter');
 const normalize = (text) => text.toLocaleLowerCase('ru').replaceAll('ё', 'е');
 const catalogueText = catalogue.map(item => normalize(item.textContent));
@@ -178,19 +180,22 @@ function filterCatalogue() {
   let visible = 0;
   catalogue.forEach((item, i) => {
     const match = (sectorFilter.value === 'all' || sectorFilter.value === item.dataset.sector)
+      && (countryFilter.value === 'all' || countryFilter.value === item.dataset.country)
       && (modelFilter.value === 'all' || modelFilter.value === item.dataset.model)
       && words.every(word => catalogueText[i].includes(word));
     item.hidden = !match;
     if (match) visible++;
   });
+  countryGroups.forEach(group => { group.hidden = ![...group.querySelectorAll('.analogue')].some(item => !item.hidden); });
   document.querySelector('#catalog-status').textContent = `Показано ${visible} из ${catalogue.length}. Раскройте строку для сравнения.`;
   document.querySelector('#catalog-empty').hidden = visible !== 0;
 }
 searchInput.addEventListener('input', filterCatalogue);
 sectorFilter.addEventListener('change', filterCatalogue);
 modelFilter.addEventListener('change', filterCatalogue);
+countryFilter.addEventListener('change', filterCatalogue);
 function resetCatalogue() {
-  searchInput.value = ''; sectorFilter.value = 'all'; modelFilter.value = 'all'; filterCatalogue();
+  searchInput.value = ''; countryFilter.value = 'all'; sectorFilter.value = 'all'; modelFilter.value = 'all'; filterCatalogue();
 }
 document.querySelector('#reset-catalog').addEventListener('click', resetCatalogue);
 document.querySelector('.catalog-tools').hidden = false;
@@ -232,7 +237,7 @@ document.querySelector('#economics-example').hidden = false;
 // Print the complete catalogue and restore the reader's filters afterwards.
 let printHidden = [];
 window.addEventListener('beforeprint', () => {
-  printHidden = catalogue.filter(item => item.hidden);
+  printHidden = [...catalogue, ...countryGroups].filter(item => item.hidden);
   printHidden.forEach(item => { item.hidden = false; });
 });
 window.addEventListener('afterprint', () => { printHidden.forEach(item => { item.hidden = true; }); printHidden = []; });
