@@ -223,3 +223,20 @@ nav{gap:19px}.header-inner{gap:14px}.header .brand-label{font-size:13px}
 @media print{.catalog-tools,.catalog-status,#catalog-empty,.hero-stats{display:none!important}.analogue[hidden]{display:block!important}.analogue-body{display:grid!important}.analogue summary,.strategy-item summary{padding:9pt 0}.analogue,.strategy-item{break-inside:avoid}.analogue-body,.strategy-body{padding:4pt 8pt 12pt}.strategy-body dl{gap:9pt}.decision-strip{color:var(--ink);background:#f2f5fa}.decision-strip span{color:var(--muted)}.insight-grid{grid-template-columns:1fr 1fr 1fr;gap:12pt}.roadmap{grid-template-columns:1fr 1fr}.table-wrap{overflow:visible;border:0}.analysis-table{min-width:0;font-size:9pt}.analysis-table td,.analysis-table th{padding:6pt}.analysis-table tbody th{position:static}.analogue summary::after,.strategy-item summary::after{display:none}.hero-stats{display:none}.section-footnote{font-size:8pt}.economics-grid{display:block}.catalog-status::after{content:'Все 23 проекта'} .analogue summary .tag{display:inline-block}.analogue summary{grid-template-columns:20px 1.2fr 1fr 140px}.analogue-name strong{font-size:11pt}.analogue-name small,.analogue-idea{font-size:9pt}.roadmap article{break-inside:avoid}.strategy-item summary{grid-template-columns:20px 1fr 160px}.strategy-item .analogue-name strong{font-size:13pt}}
 
 .catalog-download{margin-bottom:20px;font-size:14px}@media print{.catalog-download{display:none}}
+
+/* Country catalogue and Nikkei case study */
+.nikkei-case{padding:28px;border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:10px;margin:24px 0;background:#f8faff;scroll-margin-top:90px}
+.nikkei-case h3{font-size:25px;line-height:1.3;margin:8px 0 16px}
+.nikkei-case p{margin:12px 0;overflow-wrap:anywhere}
+.nikkei-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0}
+.nikkei-grid>div{border-top:1px solid var(--line);padding-top:16px}
+.nikkei-grid h4{font-size:18px;margin:8px 0}
+.nikkei-grid p{font-size:14px}
+.country-title{font-size:18px;padding:18px 12px;margin:24px 0 0;background:var(--light);border-bottom:1px solid var(--line)}
+.country-title span{font-size:12px;color:var(--muted);font-weight:400;margin-left:10px}
+.catalog-tools{grid-template-columns:1.5fr 1.2fr 1fr 1.2fr auto;margin-top:20px}
+.catalog-tools input,.catalog-tools select,.catalog-tools button{min-height:48px;font-size:16px}
+@media(max-width:1100px){.catalog-tools{grid-template-columns:1fr 1fr}.catalog-tools label:first-child{grid-column:1/-1}}
+@media(max-width:700px){.nikkei-grid{grid-template-columns:1fr;gap:8px}.nikkei-case{padding:20px}.nikkei-case h3{font-size:22px}}
+@media(max-width:440px){.catalog-tools{grid-template-columns:1fr}.catalog-tools label:first-child{grid-column:auto}}
+@media print{.country-group[hidden]{display:block!important}.country-title{break-after:avoid}.nikkei-case{padding:12pt}.nikkei-grid{display:block}}
