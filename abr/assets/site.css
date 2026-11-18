@@ -362,7 +362,7 @@ body { font-family: var(--font-sans); background: var(--light); }
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
-  .hero-date span { animation: hero-dot-colors 4.8s linear; }
+  .hero-dot.is-cycling span { animation: hero-dot-colors 4s linear; }
 }
 .products article { border-radius: var(--portfolio-card-radius); }
 .products article:nth-child(1) { background: var(--blue-soft); }
@@ -380,3 +380,19 @@ body { font-family: var(--font-sans); background: var(--light); }
 .strategy-example { padding-block: 1rem; }
 .strategy-example + .strategy-example { border-top: 1px solid var(--line); }
 .strategy-example > p { margin-block: .6rem; max-width: 78ch; }
+
+.hero-dot {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+}
+.hero-dot span { width: 16px; height: 16px; }
+.hero-dot[data-color="blue"] span { background: var(--blue); }
+.hero-dot[data-color="red"] span { background: var(--portfolio-red); }
+.hero-dot[data-color="purple"] span { background: var(--portfolio-purple); }
