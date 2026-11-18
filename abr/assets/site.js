@@ -191,6 +191,7 @@ const catalogue = [...document.querySelectorAll('.analogue')];
 const searchInput = document.querySelector('#analogue-search');
 const sectorFilter = document.querySelector('#sector-filter');
 const countryFilter = document.querySelector('#country-filter');
+const catalogueRegions = [...document.querySelectorAll('.catalog-region')];
 const countryGroups = [...document.querySelectorAll('.country-group')];
 const modelFilter = document.querySelector('#model-filter');
 const taskFilter = document.querySelector('#task-filter');
@@ -216,6 +217,11 @@ function filterCatalogue() {
   countryGroups.forEach(group => {
     group.hidden = ![...group.querySelectorAll('.analogue')].some(item => !item.hidden);
     if (active && !group.hidden) group.open = true;
+  });
+  catalogueRegions.forEach(region => {
+    region.hidden = ![...region.querySelectorAll('.country-group')].some(group => !group.hidden);
+    const media = region.querySelector('.region-media');
+    if (media) media.hidden = active;
   });
   if (catalogStatus) catalogStatus.textContent = `Показано ${visible} из ${catalogue.length}. Раскройте строку для сравнения.`;
   if (catalogEmpty) catalogEmpty.hidden = visible !== 0;
@@ -288,7 +294,7 @@ if (economicForm && economicResult && ["clients", "price", "variable", "fixed"].
 // Print the complete catalogue and restore the reader's filters afterwards.
 let printHidden = [];
 window.addEventListener('beforeprint', () => {
-  printHidden = [...catalogue, ...countryGroups].filter(item => item.hidden);
+  printHidden = [...catalogue, ...countryGroups, ...catalogueRegions, ...document.querySelectorAll('.region-media')].filter(item => item.hidden);
   printHidden.forEach(item => { item.hidden = false; });
 });
 window.addEventListener('afterprint', () => { printHidden.forEach(item => { item.hidden = true; }); printHidden = []; });
