@@ -390,3 +390,20 @@ body { font-family: var(--font-sans); background: var(--light); }
                hero-beacon-pulse 1.2s ease-in-out infinite;
   }
 }
+
+/* Dark palette variants keep chart marks legible on the white plot. */
+:root {
+  --portfolio-red-dark: #b82448;
+  --portfolio-purple-dark: #6535a2;
+}
+.chart-bar { background: var(--blue-dark); }
+.chart-point.negative .chart-bar { background: var(--portfolio-red-dark); }
+.chart-point[aria-pressed="true"] .chart-bar,
+.chart-point:hover .chart-bar { background: var(--portfolio-purple-dark); }
+.market-change { background: var(--portfolio-pink-soft); color: var(--portfolio-red-dark); }
+.market-change.positive { background: var(--green-soft); color: #105840; }
+
+.swot-title span { border-color: transparent; background: var(--green-soft); color: var(--ink); }
+.swot-card:nth-child(2) .swot-title span { background: var(--portfolio-pink-soft); }
+.swot-card:nth-child(3) .swot-title span { background: var(--blue-soft); }
+.swot-card:nth-child(4) .swot-title span { background: var(--portfolio-purple-soft); }
