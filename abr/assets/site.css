@@ -314,11 +314,6 @@ body { font-family: var(--font-sans); background: var(--light); }
 .chart-bar { background: #72c8eb; }
 .tag { background: var(--light); border-color: var(--line); color: var(--ink); }
 
-.decision-table { min-width: 78rem; }
-.decision-table .evidence { margin: 0; padding: 0; border: 0; }
-#decision-title { margin-block: 1.5rem .75rem; }
-#decision-title + p { max-width: 78ch; margin-block-end: 1rem; }
-.decision-table { margin-block-start: .5rem; }
 .card-sources { padding-inline-start: 1.2rem; }
 .fields small { color: var(--muted); font-weight: 400; }
 .chart-bar { background: #16739a; }
@@ -329,7 +324,6 @@ body { font-family: var(--font-sans); background: var(--light); }
   .analogue summary .tag { grid-column: 2; grid-row: auto; }
   .analogue summary::after { grid-column: 3; }
 }
-@media print { .decision-table { min-width: 0; } }
 
 .roadmap article > span { color: var(--blue-dark); }
 
@@ -362,14 +356,14 @@ body { font-family: var(--font-sans); background: var(--light); }
 .products article:nth-child(2) { background: var(--green-soft); }
 .products article:nth-child(3) { background: var(--portfolio-purple-soft); }
 .products article:nth-child(4) { background: var(--portfolio-pink-soft); }
-.pilot-checklist {
-  padding: clamp(1.2rem, 3vw, 1.75rem);
-  margin-block: 1.5rem;
-  border-radius: var(--portfolio-card-radius);
-  background: var(--green-soft);
-}
-.pilot-checklist ul, .decision-milestones { padding-inline-start: 1.25rem; }
+.decision-milestones { padding-inline-start: 1.25rem; }
 .decision-milestones li + li { margin-block-start: .65rem; }
 .supporting-block { margin-block: 1rem; }
 .supporting-block > summary { font-weight: 750; }
 .nikkei-case, .market-panel { border-radius: var(--portfolio-card-radius); }
+
+.strategy-evidence { max-width: 78ch; margin-block: 1rem 1.5rem; }
+.strategy-evidence p + p { margin-block-start: .75rem; }
+.strategy-example { padding-block: 1rem; }
+.strategy-example + .strategy-example { border-top: 1px solid var(--line); }
+.strategy-example > p { margin-block: .6rem; max-width: 78ch; }

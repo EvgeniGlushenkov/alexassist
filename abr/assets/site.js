@@ -247,11 +247,16 @@ function revealReference() {
   const item = catalogue.find(item => item.id === id);
   const target = document.getElementById(id);
   if (target && !item) {
+    let revealed = false;
     for (let parent = target.parentElement; parent; parent = parent.parentElement) {
-      if (parent instanceof HTMLDetailsElement) parent.open = true;
+      if (parent instanceof HTMLDetailsElement && !parent.open) {
+        parent.open = true;
+        revealed = true;
+      }
     }
     const panel = target.querySelector(':scope > .supporting-block, :scope > .shell > .supporting-block');
     if (panel) panel.open = true;
+    if (revealed) requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
   }
   if (item) {
     if (item.hidden) resetCatalogue();
