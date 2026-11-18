@@ -354,16 +354,6 @@ body { font-family: var(--font-sans); background: var(--light); }
 .section-heading h2 { font-weight: 800; font-size: clamp(2rem, 1.35rem + 3.4vw, 4.25rem); line-height: 1.04; }
 .hero-date span { background: var(--portfolio-green); }
 
-@keyframes hero-dot-colors {
-  0%, 100% { background-color: var(--portfolio-green); }
-  25% { background-color: var(--blue); }
-  50% { background-color: var(--portfolio-red); }
-  75% { background-color: var(--portfolio-purple); }
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-  .hero-dot.is-cycling span { animation: hero-dot-colors 4s linear; }
-}
 .products article { border-radius: var(--portfolio-card-radius); }
 .products article:nth-child(1) { background: var(--blue-soft); }
 .products article:nth-child(2) { background: var(--green-soft); }
@@ -380,19 +370,23 @@ body { font-family: var(--font-sans); background: var(--light); }
 .strategy-example { padding-block: 1rem; }
 .strategy-example + .strategy-example { border-top: 1px solid var(--line); }
 .strategy-example > p { margin-block: .6rem; max-width: 78ch; }
+.hero-date .hero-dot { width: 12px; height: 12px; }
 
-.hero-dot {
-  display: inline-grid;
-  place-items: center;
-  flex: none;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: var(--white);
+@keyframes hero-beacon-color {
+  0% { background-color: var(--portfolio-green); }
+  25% { background-color: var(--blue); }
+  50% { background-color: var(--portfolio-red); }
+  75% { background-color: var(--portfolio-purple); }
 }
-.hero-dot span { width: 16px; height: 16px; }
-.hero-dot[data-color="blue"] span { background: var(--blue); }
-.hero-dot[data-color="red"] span { background: var(--portfolio-red); }
-.hero-dot[data-color="purple"] span { background: var(--portfolio-purple); }
+
+@keyframes hero-beacon-pulse {
+  0%, 55% { opacity: 1; }
+  70%, 100% { opacity: .16; }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .hero-date .hero-dot {
+    animation: hero-beacon-color 4.8s steps(1, end) infinite,
+               hero-beacon-pulse 1.2s ease-in-out infinite;
+  }
+}

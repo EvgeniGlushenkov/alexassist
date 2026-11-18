@@ -314,21 +314,3 @@ window.addEventListener('beforeprint', () => {
   printHidden.forEach(item => { item.hidden = false; });
 });
 window.addEventListener('afterprint', () => { printHidden.forEach(item => { item.hidden = true; }); printHidden = []; });
-
-const heroDot = document.querySelector('.hero-dot');
-if (heroDot) {
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const colors = ['green', 'blue', 'red', 'purple'];
-  heroDot.hidden = false;
-  heroDot.classList.add('is-cycling');
-  heroDot.addEventListener('animationend', () => heroDot.classList.remove('is-cycling'));
-  heroDot.addEventListener('click', () => {
-    if (reducedMotion.matches) {
-      const current = Math.max(0, colors.indexOf(heroDot.dataset.color));
-      heroDot.dataset.color = colors[(current + 1) % colors.length];
-      return;
-    }
-    heroDot.classList.remove('is-cycling');
-    requestAnimationFrame(() => requestAnimationFrame(() => heroDot.classList.add('is-cycling')));
-  });
-}
