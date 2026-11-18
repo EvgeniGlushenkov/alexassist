@@ -343,6 +343,8 @@ body { font-family: var(--font-sans); background: var(--light); }
 :root {
   --portfolio-line: #e7e7e3;
   --portfolio-green: #08dd66;
+  --portfolio-red: #ff3e5b;
+  --portfolio-purple: #9859e6;
   --portfolio-pink-soft: #ffc3cc;
   --portfolio-purple-soft: #dcc4f6;
   --portfolio-card-radius: 20px;
@@ -351,6 +353,17 @@ body { font-family: var(--font-sans); background: var(--light); }
 .header nav a { letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
 .section-heading h2 { font-weight: 800; font-size: clamp(2rem, 1.35rem + 3.4vw, 4.25rem); line-height: 1.04; }
 .hero-date span { background: var(--portfolio-green); }
+
+@keyframes hero-dot-colors {
+  0%, 100% { background-color: var(--portfolio-green); }
+  25% { background-color: var(--blue); }
+  50% { background-color: var(--portfolio-red); }
+  75% { background-color: var(--portfolio-purple); }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .hero-date span { animation: hero-dot-colors 4.8s linear; }
+}
 .products article { border-radius: var(--portfolio-card-radius); }
 .products article:nth-child(1) { background: var(--blue-soft); }
 .products article:nth-child(2) { background: var(--green-soft); }
