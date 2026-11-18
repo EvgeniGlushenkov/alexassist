@@ -220,6 +220,7 @@ function filterCatalogue() {
   });
   catalogueRegions.forEach(region => {
     region.hidden = ![...region.querySelectorAll('.country-group')].some(group => !group.hidden);
+    if (active && !region.hidden) region.open = true;
     const media = region.querySelector('.region-media');
     if (media) media.hidden = active;
   });
@@ -237,7 +238,7 @@ function resetCatalogue() {
     if (filter) filter.value = 'all';
   });
   filterCatalogue();
-  countryGroups.forEach(group => { group.open = false; });
+  [...catalogueRegions, ...countryGroups].forEach(group => { group.open = false; });
 }
 document.querySelector('#reset-catalog')?.addEventListener('click', resetCatalogue);
 if (catalogTools) catalogTools.hidden = false;
@@ -246,6 +247,8 @@ function revealReference() {
   const item = catalogue.find(item => item.id === id);
   if (item) {
     if (item.hidden) resetCatalogue();
+    const region = item.closest('.catalog-region');
+    if (region) region.open = true;
     const group = item.closest('.country-group');
     if (group) group.open = true;
     item.open = true;
