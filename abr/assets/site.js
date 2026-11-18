@@ -245,6 +245,14 @@ if (catalogTools) catalogTools.hidden = false;
 function revealReference() {
   const id = location.hash.slice(1);
   const item = catalogue.find(item => item.id === id);
+  const target = document.getElementById(id);
+  if (target && !item) {
+    for (let parent = target.parentElement; parent; parent = parent.parentElement) {
+      if (parent instanceof HTMLDetailsElement) parent.open = true;
+    }
+    const panel = target.querySelector(':scope > .supporting-block, :scope > .shell > .supporting-block');
+    if (panel) panel.open = true;
+  }
   if (item) {
     if (item.hidden) resetCatalogue();
     const region = item.closest('.catalog-region');

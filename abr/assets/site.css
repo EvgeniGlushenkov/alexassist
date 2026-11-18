@@ -344,3 +344,32 @@ body { font-family: var(--font-sans); background: var(--light); }
 .region-title .small { display: inline-block; margin-inline-start: .5rem; font-weight: 400; }
 .region-media { padding-inline-start: 1.25rem; margin-block: .75rem 0; }
 .region-media li + li { margin-block-start: .3rem; }
+
+/* Career site palette and card rhythm, applied to the ABR components. */
+:root {
+  --portfolio-line: #e7e7e3;
+  --portfolio-green: #08dd66;
+  --portfolio-pink-soft: #ffc3cc;
+  --portfolio-purple-soft: #dcc4f6;
+  --portfolio-card-radius: 20px;
+}
+.header { border-bottom-color: var(--portfolio-line); }
+.header nav a { letter-spacing: .08em; text-transform: uppercase; font-size: .72rem; }
+.section-heading h2 { font-weight: 800; font-size: clamp(2rem, 1.35rem + 3.4vw, 4.25rem); line-height: 1.04; }
+.hero-date span { background: var(--portfolio-green); }
+.products article { border-radius: var(--portfolio-card-radius); }
+.products article:nth-child(1) { background: var(--blue-soft); }
+.products article:nth-child(2) { background: var(--green-soft); }
+.products article:nth-child(3) { background: var(--portfolio-purple-soft); }
+.products article:nth-child(4) { background: var(--portfolio-pink-soft); }
+.pilot-checklist {
+  padding: clamp(1.2rem, 3vw, 1.75rem);
+  margin-block: 1.5rem;
+  border-radius: var(--portfolio-card-radius);
+  background: var(--green-soft);
+}
+.pilot-checklist ul, .decision-milestones { padding-inline-start: 1.25rem; }
+.decision-milestones li + li { margin-block-start: .65rem; }
+.supporting-block { margin-block: 1rem; }
+.supporting-block > summary { font-weight: 750; }
+.nikkei-case, .market-panel { border-radius: var(--portfolio-card-radius); }
