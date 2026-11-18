@@ -12,7 +12,9 @@
     "source": "https://help.autonews.com/hc/en-us/articles/15018525870740-Corporate-Group-Subscriptions",
     "id": 1,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "GoAutoNews Premium",
@@ -27,7 +29,9 @@
     "source": "https://www.goautomedia.net/goautonews-premium",
     "id": 2,
     "country": "Австралия",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Automotive Management / AM Live",
@@ -42,7 +46,9 @@
     "source": "https://automotivemanagementlive.co.uk/",
     "id": 3,
     "country": "Великобритания",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Autocar Professional",
@@ -57,7 +63,9 @@
     "source": "https://www.autocarpro.in/aboutus",
     "id": 4,
     "country": "Индия",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Gasgoo",
@@ -72,7 +80,9 @@
     "source": "https://autonews.gasgoo.com/about",
     "id": 5,
     "country": "Китай",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Fleet Europe",
@@ -87,7 +97,9 @@
     "source": "https://discover.fleeteurope.com/fleet-and-mobility-interests",
     "id": 6,
     "country": "Европа",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "MarkLines",
@@ -102,7 +114,9 @@
     "source": "https://www.marklines.com/en/service",
     "id": 7,
     "country": "Япония",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "competitor_networks",
+    "evidence_level": "described"
   },
   {
     "name": "JATO Dynamics",
@@ -117,7 +131,9 @@
     "source": "https://www.jato.com/solutions",
     "id": 8,
     "country": "Великобритания",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "AutoIntelligence Suite",
@@ -132,7 +148,9 @@
     "source": "https://www.mobilityglobal.com/en-us/products/auto-intelligence-suite",
     "id": 9,
     "country": "Международные",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Autovista / J.D. Power",
@@ -147,7 +165,9 @@
     "source": "https://www.jdpower.com/business/residual-value-intelligence/",
     "id": 10,
     "country": "Европа",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "Urban Science / NetworkPlanner",
@@ -162,7 +182,9 @@
     "source": "https://lp.urbanscience.com/build-your-best-network",
     "id": 11,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "territory",
+    "evidence_level": "described"
   },
   {
     "name": "vAuto / Provision",
@@ -177,7 +199,9 @@
     "source": "https://www.vauto.com/products/provision/",
     "id": 12,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "Vincentric",
@@ -192,7 +216,9 @@
     "source": "https://www.vincentric.com/Home/Fleet-Solutions/Dynamic-Cost-to-Own-Fleet-Edition",
     "id": 13,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "Benchmark Mineral Intelligence",
@@ -207,7 +233,9 @@
     "source": "https://www.benchmarkminerals.com/intelligence",
     "id": 14,
     "country": "Великобритания",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "АВТОСТАТ",
@@ -222,7 +250,9 @@
     "source": "https://www.autostat.ru/research/",
     "id": 15,
     "country": "Россия",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "competitor_networks",
+    "evidence_level": "described"
   },
   {
     "name": "NADA 20 Group",
@@ -237,7 +267,9 @@
     "source": "https://composite.nada.org/",
     "id": 16,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "self_benchmark",
+    "evidence_level": "described"
   },
   {
     "name": "Skift Research",
@@ -252,7 +284,9 @@
     "source": "https://research.skift.com/subscribe/",
     "id": 17,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "SONAR",
@@ -267,7 +301,9 @@
     "source": "https://gosonar.com/",
     "id": 18,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "CoStar with STR Benchmark",
@@ -282,7 +318,9 @@
     "source": "https://www.costar.com/products/str-benchmark",
     "id": 19,
     "country": "Международные",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "self_benchmark",
+    "evidence_level": "described"
   },
   {
     "name": "Cirium / Fleets Analyzer",
@@ -297,7 +335,9 @@
     "source": "https://www.cirium.com/analytics-services/fleets-analyzer/",
     "id": 20,
     "country": "Международные",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "counterparty_check",
+    "evidence_level": "described"
   },
   {
     "name": "ICIS",
@@ -312,7 +352,9 @@
     "source": "https://www.icis.com/explore/services/pricing/",
     "id": 21,
     "country": "Международные",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "PitchBook",
@@ -327,7 +369,9 @@
     "source": "https://pitchbook.com/platform-data/companies",
     "id": 22,
     "country": "США",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "counterparty_check",
+    "evidence_level": "described"
   },
   {
     "name": "Wood Mackenzie / Lens",
@@ -342,7 +386,9 @@
     "source": "https://www.woodmac.com/lens/",
     "id": 23,
     "country": "Международные",
-    "verified": "2026-11-15"
+    "verified": "2026-11-15",
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Nikkei BP / Nikkei Automotive + xTECH",
@@ -357,7 +403,9 @@
     "dependency": "Аудитория Nikkei сильнее ориентирована на разработку автомобилей; для АБР содержание нужно строить вокруг решений дилеров.",
     "source": "https://www.nikkeibpm.co.jp/item/nat/983/xtech.html",
     "verified": "2026-11-17",
-    "id": 24
+    "id": 24,
+    "task": "other",
+    "evidence_level": "published_terms"
   },
   {
     "name": "AAA DATA",
@@ -372,7 +420,9 @@
     "dependency": "Нужны права на данные, контроль качества и доказанная полезность сигналов.",
     "source": "https://www.aaa-data.fr/solutions/",
     "verified": "2026-11-17",
-    "id": 25
+    "id": 25,
+    "task": "territory",
+    "evidence_level": "described"
   },
   {
     "name": "Quintegia / Research",
@@ -387,7 +437,9 @@
     "dependency": "Нужны сопоставимая выборка, повторяемая методика и участие дилеров.",
     "source": "https://www.quintegia.it/en/activities/",
     "verified": "2026-11-17",
-    "id": 26
+    "id": 26,
+    "task": "self_benchmark",
+    "evidence_level": "described"
   },
   {
     "name": "MSI / Datos de mercado",
@@ -402,7 +454,9 @@
     "dependency": "Потребуется внешний источник данных о парке и прозрачная методика оценки.",
     "source": "https://msiberia.org/datos-de-mercado/",
     "verified": "2026-11-17",
-    "id": 27
+    "id": 27,
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "DBI IT / Bilstatistik.dk",
@@ -417,7 +471,9 @@
     "dependency": "Частота обновления должна соответствовать источникам и задачам клиента.",
     "source": "https://www.dbiit.dk/produkter-og-services/bilstatistik-dk/",
     "verified": "2026-11-17",
-    "id": 28
+    "id": 28,
+    "task": "territory",
+    "evidence_level": "described"
   },
   {
     "name": "Vroom",
@@ -432,7 +488,9 @@
     "dependency": "Нельзя приравнивать регистрации к продажам без согласованного определения.",
     "source": "https://web.vroom.nu/",
     "verified": "2026-11-17",
-    "id": 29
+    "id": 29,
+    "task": "territory",
+    "evidence_level": "described"
   },
   {
     "name": "OFV Statistikk",
@@ -447,7 +505,9 @@
     "dependency": "Платная часть должна решать отдельную задачу, а не просто закрывать ранее доступные новости.",
     "source": "https://ofv.no/statistikk",
     "verified": "2026-11-17",
-    "id": 30
+    "id": 30,
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "Canadian Black Book",
@@ -462,7 +522,9 @@
     "dependency": "Самостоятельная оценочная модель требует транзакционных данных и проверки ошибок прогноза.",
     "source": "https://www.canadianblackbook.com/",
     "verified": "2026-11-17",
-    "id": 31
+    "id": 31,
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "Lightstone / AutoStats и SmartMapping",
@@ -477,7 +539,9 @@
     "dependency": "Нужны локальные продажи и характеристики территории, а не только координаты точек.",
     "source": "https://corporate.lightstone.co.za/",
     "verified": "2026-11-17",
-    "id": 32
+    "id": 32,
+    "task": "territory",
+    "evidence_level": "described"
   },
   {
     "name": "Automotive Business / Estudos",
@@ -492,7 +556,9 @@
     "dependency": "Разделять редакционные выводы и интересы партнёров исследования.",
     "source": "https://www.automotivebusiness.com.br/estudos",
     "verified": "2026-11-17",
-    "id": 33
+    "id": 33,
+    "task": "other",
+    "evidence_level": "no_demand_data"
   },
   {
     "name": "SimDataGroup / SimIndex",
@@ -507,7 +573,9 @@
     "dependency": "Потребуются соглашения, интеграции, обезличивание и единый словарь метрик.",
     "source": "https://www.amda.mx/wp-content/uploads/amda_simdatagroup_250428.pdf",
     "verified": "2026-11-17",
-    "id": 34
+    "id": 34,
+    "task": "self_benchmark",
+    "evidence_level": "described"
   },
   {
     "name": "VWE / Market Performance Manager",
@@ -522,7 +590,9 @@
     "dependency": "Доли продаж нельзя рассчитывать только по числу дилерских точек.",
     "source": "https://vwe.nl/marktinzicht/",
     "verified": "2026-11-17",
-    "id": 35
+    "id": 35,
+    "task": "territory",
+    "evidence_level": "described"
   },
   {
     "name": "auto-i-dat",
@@ -537,7 +607,9 @@
     "dependency": "Это аналог организации данных, а не готовый повод выходить в оценку автомобилей.",
     "source": "https://www.auto-i-dat.ch/produkte",
     "verified": "2026-11-17",
-    "id": 36
+    "id": 36,
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "IBRM SAMAR / MotoTrendy",
@@ -552,7 +624,9 @@
     "dependency": "Нужны единые идентификаторы, права доступа и воспроизводимые расчёты.",
     "source": "https://www.samar.pl/",
     "verified": "2026-11-17",
-    "id": 37
+    "id": 37,
+    "task": "competitor_networks",
+    "evidence_level": "described"
   },
   {
     "name": "CARDATA",
@@ -567,7 +641,9 @@
     "dependency": "АБР не располагает подтверждённой оценочной моделью; для ценовых функций нужен партнёр.",
     "source": "https://www.cardata.com.tr/",
     "verified": "2026-11-17",
-    "id": 38
+    "id": 38,
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "name": "Thailand Automotive Institute / AIU",
@@ -582,7 +658,9 @@
     "dependency": "Институциональный сервис не доказывает жизнеспособность коммерческой подписки АБР.",
     "source": "https://aiu.thaiauto.or.th/",
     "verified": "2026-11-17",
-    "id": 39
+    "id": 39,
+    "task": "counterparty_check",
+    "evidence_level": "described"
   },
   {
     "name": "DealStreetAsia / Data Vantage",
@@ -597,7 +675,9 @@
     "dependency": "Проект входит в Nikkei; это отдельный продукт, но не независимая от Nikkei группа. Нужна проверка корпоративных событий.",
     "source": "https://www.dealstreetasia.com/data-vantage/",
     "verified": "2026-11-17",
-    "id": 40
+    "id": 40,
+    "task": "counterparty_check",
+    "evidence_level": "described"
   },
   {
     "name": "DAT / SilverDAT",
@@ -612,7 +692,9 @@
     "dependency": "Интеграции имеют смысл после стандартизации данных и появления платного спроса.",
     "source": "https://www.dat.de/schnittstellenpartner/",
     "verified": "2026-11-17",
-    "id": 41
+    "id": 41,
+    "task": "inventory_value",
+    "evidence_level": "described"
   },
   {
     "id": 42,
@@ -628,7 +710,9 @@
     "dependency": "Рейтинг зависит от раскрытия данных. В немецком Топ-100 за 2026 год издатель отдельно объясняет отсутствие Emil Frey.",
     "source": "https://abo.automobilwoche.de/de/unternehmens-lizenz-anfragen",
     "verified": "2026-11-17",
-    "additionalSource": "https://s3-prod.automobilwoche.de/Datacenter-Files-Arc-AMW/Print/2026/top-100-groessten-autohandelsgruppen-deutschland-20260615-13-013.pdf"
+    "additionalSource": "https://s3-prod.automobilwoche.de/Datacenter-Files-Arc-AMW/Print/2026/top-100-groessten-autohandelsgruppen-deutschland-20260615-13-013.pdf",
+    "task": "competitor_networks",
+    "evidence_level": "described"
   },
   {
     "id": 43,
@@ -644,7 +728,9 @@
     "dependency": "Публиковать размер и состав выборки каждой волны. Ответы отражают ожидания участников.",
     "source": "https://www.puls-marktforschung.de/unsere-loesungen/unsere-tools/autohaus-panel.html",
     "verified": "2026-11-17",
-    "additionalSource": "https://story.autohaus.de/next-faqs/"
+    "additionalSource": "https://story.autohaus.de/next-faqs/",
+    "task": "self_benchmark",
+    "evidence_level": "described"
   },
   {
     "id": 44,
@@ -660,7 +746,9 @@
     "dependency": "Портрет компании и сопоставление финансовых результатов требуют разных источников.",
     "source": "https://b2bmarketing.vogel.de/pages/themenplan-2026-kfz-betrieb",
     "verified": "2026-11-17",
-    "additionalSource": "https://www.kfz-betrieb.vogel.de/e-paper/"
+    "additionalSource": "https://www.kfz-betrieb.vogel.de/e-paper/",
+    "task": "self_benchmark",
+    "evidence_level": "described"
   },
   {
     "id": 45,
@@ -675,6 +763,8 @@
     "abrHypothesis": "Проверить, какие подборки по архиву полезны разным ролям в дилерской группе.",
     "dependency": "У двух изданий Vogel один издатель. Интерес к производственным темам у дилеров нужно проверить.",
     "source": "https://www.automobil-industrie.vogel.de/faq/",
-    "verified": "2026-11-17"
+    "verified": "2026-11-17",
+    "task": "other",
+    "evidence_level": "published_terms"
   }
 ]
