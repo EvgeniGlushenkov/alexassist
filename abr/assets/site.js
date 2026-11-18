@@ -201,6 +201,8 @@ const normalize = (text) => text.toLocaleLowerCase('ru').replaceAll('ё', 'е');
 const catalogueText = catalogue.map(item => normalize(item.textContent));
 function filterCatalogue() {
   const words = normalize((searchInput?.value ?? '').trim()).split(/\s+/).filter(Boolean);
+  const active = words.length > 0 || [sectorFilter, countryFilter, modelFilter, taskFilter]
+    .some(filter => filter && filter.value !== 'all');
   let visible = 0;
   catalogue.forEach((item, i) => {
     const match = (!sectorFilter || sectorFilter.value === 'all' || sectorFilter.value === item.dataset.sector)
@@ -211,7 +213,10 @@ function filterCatalogue() {
     item.hidden = !match;
     if (match) visible++;
   });
-  countryGroups.forEach(group => { group.hidden = ![...group.querySelectorAll('.analogue')].some(item => !item.hidden); });
+  countryGroups.forEach(group => {
+    group.hidden = ![...group.querySelectorAll('.analogue')].some(item => !item.hidden);
+    if (active && !group.hidden) group.open = true;
+  });
   if (catalogStatus) catalogStatus.textContent = `Показано ${visible} из ${catalogue.length}. Раскройте строку для сравнения.`;
   if (catalogEmpty) catalogEmpty.hidden = visible !== 0;
 }
@@ -226,6 +231,7 @@ function resetCatalogue() {
     if (filter) filter.value = 'all';
   });
   filterCatalogue();
+  countryGroups.forEach(group => { group.open = false; });
 }
 document.querySelector('#reset-catalog')?.addEventListener('click', resetCatalogue);
 if (catalogTools) catalogTools.hidden = false;
@@ -234,6 +240,8 @@ function revealReference() {
   const item = catalogue.find(item => item.id === id);
   if (item) {
     if (item.hidden) resetCatalogue();
+    const group = item.closest('.country-group');
+    if (group) group.open = true;
     item.open = true;
     requestAnimationFrame(() => item.scrollIntoView({ block: 'start' }));
   }

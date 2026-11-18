@@ -309,9 +309,7 @@ body { font-family: var(--font-sans); background: var(--light); }
 .hero .button-primary:hover, .button-primary:hover { background: var(--blue-soft); color: var(--ink); }
 .market-panel { border-color: var(--line); box-shadow: none; }
 .reference-picks, .nikkei-case { background: var(--blue-soft); }
-.germany-case { background: var(--green-soft); border-top-color: #14864a; }
 .nikkei-case > p, .nikkei-case li { max-width: 78ch; }
-.germany-case li + li { margin-block-start: .5rem; }
 .country-title { background: var(--white); }
 .chart-bar { background: #72c8eb; }
 .tag { background: var(--light); border-color: var(--line); color: var(--ink); }
@@ -334,3 +332,8 @@ body { font-family: var(--font-sans); background: var(--light); }
 @media print { .decision-table { min-width: 0; } }
 
 .roadmap article > span { color: var(--blue-dark); }
+
+.case-studies { margin-block: 1.5rem; }
+.case-studies > p { margin-block-start: .5rem; max-width: 70ch; }
+.country-group > summary { cursor: pointer; }
+.country-group > summary::marker { color: var(--blue-dark); }
