@@ -1,0 +1,6 @@
+.version-switch{display:inline-flex;flex:none;padding:3px;border:1px solid var(--line,#dbe2ed);border-radius:999px;background:#fff;font:600 13px/1 Manrope,Roboto,Arial,sans-serif}
+.version-switch a{padding:7px 12px;border-radius:999px;color:var(--muted,#4e5f75);text-decoration:none;white-space:nowrap}
+.version-switch a[aria-current="page"]{background:var(--blue,#154dcc);color:#fff}
+.version-switch a:not([aria-current]):hover{color:var(--blue-dark,#103b9e);background:#f2f5fa}
+@media (max-width:900px){.header-inner nav{display:none}}
+@media print{.version-switch{display:none}}
