@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="АБР 2.0: как превратить отраслевое издание в рабочий инструмент дилерского бизнеса. Мировые практики по регионам и задачам, уроки закрытых проектов, работа с текущими клиентами.">
+  <title>АБР 2.0 · Из журнала в рабочий инструмент отрасли</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="../assets/site.css?v=abr">
+  <link rel="stylesheet" href="../assets/version-switch.css?v=2">
+  <style>
+    body{font-family:Manrope,Roboto,Arial,sans-serif}
+    .mono{font-family:"DM Mono",monospace}
+    .v2-hero{padding:clamp(48px,7vw,96px) 0 clamp(36px,5vw,64px);background:var(--navy);color:#fff}
+    .v2-hero .eyebrow{color:#9fb6e6;font:500 13px/1.4 "DM Mono",monospace;letter-spacing:.04em;text-transform:uppercase}
+    .v2-hero h1{margin:14px 0 18px;font-size:clamp(34px,5.4vw,64px);line-height:1.04;letter-spacing:-.035em;font-weight:800;max-width:15ch}
+    .v2-hero p.lead{max-width:62ch;font-size:clamp(17px,1.6vw,20px);color:#d6e0f3}
+    .thesis{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);margin-top:40px}
+    .thesis div{padding:20px;border:1px solid #2c3d5e;border-radius:12px}
+    .thesis b{display:block;font-size:13px;color:#9fb6e6;font-family:"DM Mono",monospace;margin-bottom:8px}
+    .v2-sec{padding:clamp(40px,6vw,80px) 0;border-bottom:1px solid var(--line)}
+    .v2-sec.band{background:var(--light)}
+    .v2-sec h2{font-size:clamp(26px,3.2vw,38px);letter-spacing:-.03em;line-height:1.1;font-weight:800;margin-bottom:12px}
+    .v2-sec .intro{max-width:70ch;color:var(--muted);margin-bottom:28px}
+    .kicker{font:500 12px/1 "DM Mono",monospace;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;margin-bottom:12px;display:block}
+    details.fold{border:1px solid var(--line);border-radius:12px;background:#fff;margin-bottom:12px}
+    details.fold>summary{list-style:none;padding:18px 22px;display:flex;gap:16px;align-items:baseline;justify-content:space-between;font-weight:700;font-size:18px}
+    details.fold>summary::-webkit-details-marker{display:none}
+    details.fold>summary::after{content:"+";font:500 22px/1 "DM Mono",monospace;color:var(--blue)}
+    details.fold[open]>summary::after{content:"−"}
+    details.fold>summary small{font-weight:500;font-size:14px;color:var(--muted);margin-left:auto;text-align:right}
+    .fold-body{padding:0 22px 22px}
+    .fold-body p+p{margin-top:10px}
+    .tag{display:inline-block;padding:3px 8px;border-radius:6px;font:500 11px/1.3 "DM Mono",monospace;vertical-align:middle;margin-right:6px}
+    .t-fact{background:#e3ecff;color:#103b9e}.t-hyp{background:#fff1d6;color:#7a4b00}.t-gap{background:#fde4e4;color:#8f1d1d}
+    .cases{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:14px}
+    .case{padding:16px;border:1px solid var(--line);border-radius:10px;background:var(--light)}
+    .case h4{font-size:16px;margin:0 0 6px}
+    .case p{font-size:14.5px;line-height:1.5}
+    .case .take{margin-top:8px;color:var(--ink);font-weight:600}
+    table.v2t{width:100%;border-collapse:collapse;font-size:15px;background:#fff}
+    .v2t th,.v2t td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    .v2t th{font:500 12px/1.3 "DM Mono",monospace;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+    .v2t td:first-child{font-family:"DM Mono",monospace;color:var(--blue);width:36px}
+    .scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+    .layers{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .layer{padding:20px;border-radius:12px;background:#fff;border:1px solid var(--line)}
+    .layer h3{font-size:18px;margin-bottom:6px}
+    .layer ul{margin:10px 0 0;padding-left:18px;font-size:14.5px}
+    .layer li{margin-bottom:6px}
+    .cycle{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;counter-reset:s}
+    .cycle div{padding:16px;border-radius:10px;background:#fff;border:1px solid var(--line);position:relative}
+    .cycle div::before{counter-increment:s;content:"0" counter(s);font:500 12px/1 "DM Mono",monospace;color:var(--blue);display:block;margin-bottom:8px}
+    .cycle h4{font-size:15.5px;margin:0 0 6px}.cycle p{font-size:14px;line-height:1.5}
+    .verdict{padding:24px;border-left:4px solid var(--blue);background:#fff;border-radius:0 12px 12px 0;max-width:80ch}
+    .verdict p+p{margin-top:10px}
+    ul.plain{padding-left:18px}ul.plain li{margin-bottom:8px}
+    .src{font-size:14px;columns:2;column-gap:40px}.src li{break-inside:avoid;margin-bottom:6px}
+    @media(max-width:900px){.thesis,.layers{grid-template-columns:1fr 1fr}.cycle{grid-template-columns:1fr 1fr}.src{columns:1}}
+    @media(max-width:600px){.thesis,.layers,.cycle{grid-template-columns:1fr}details.fold>summary small{display:none}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="header">
+  <div class="shell header-inner">
+    <a class="brand" href="#main"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>АБР <span class="brand-label">/ 2.0</span></a>
+    <nav aria-label="Разделы">
+      <a href="#world">Мир</a><a href="#problems">Задачи</a><a href="#top10">Топ‑10</a><a href="#closed">Закрытые</a><a href="#clients">Клиенты</a><a href="#product">Продукт</a><a href="#first">Что первым</a>
+    </nav>
+    <div class="version-switch" role="group" aria-label="Версия анализа"><a href="../">Версия 1.0</a><a href="./" aria-current="page">Версия 2.0</a></div>
+  </div>
+</header>
+
+<main id="main">
+<section class="v2-hero">
+  <div class="shell">
+    <p class="eyebrow">Независимый взгляд · версия 2.0 · 19 ноября 2026</p>
+    <h1>АБР как рабочий инструмент дилерского бизнеса</h1>
+    <p class="lead">Версия 1.0 отвечала на вопрос «какой продукт проверить первым». Здесь вопрос шире: что должно появиться вокруг журнала, рейтинга и базы, чтобы клиент АБР открывал их каждую неделю, а не раз в год.</p>
+    <div class="thesis">
+      <div><b>01 · Тезис</b>Издание живёт не рекламой, а привычкой клиента. Мировые лидеры продают регулярный рабочий цикл: данные, сравнение, встречи.</div>
+      <div><b>02 · Опора</b>У АБР уже есть три редких актива: рейтинг холдингов, база из 4 664 шоурумов и доверие дилеров.</div>
+      <div><b>03 · Рычаг</b>Самый дешёвый рост — у текущих клиентов: продление, расширение на команду, второй продукт. Для этого нужен менеджер клиентов.</div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-sec" id="diff">
+  <div class="shell">
+    <span class="kicker">Что изменилось</span>
+    <h2>Чем 2.0 отличается от 1.0</h2>
+    <details class="fold" open>
+      <summary>Коротко, в трёх пунктах <small>прочитать за 30 секунд</small></summary>
+      <div class="fold-body">
+        <ul class="plain">
+          <li><b>Не каталог, а выводы.</b> 45 проектов из версии 1.0 остаются в ней. Здесь — сжатые уроки по регионам и по задачам дилера, плюс 10 практик, которые реально перенести.</li>
+          <li><b>Добавлены закрытые проекты.</b> Они показывают, где отраслевые медиа ломаются. Чаще всего это зависимость от рекламы в кризис.</li>
+          <li><b>Добавлен взгляд со стороны клиента.</b> Как вести тех, кто уже купил отчёт, рейтинг или подписку, чтобы они продлевали и брали больше.</li>
+        </ul>
+        <p style="margin-top:12px"><span class="tag t-fact">факт</span>подтверждено открытым источником <span class="tag t-hyp">гипотеза</span>предположение, требует проверки <span class="tag t-gap">нет данных</span>знает только АБР</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="v2-sec band" id="russia">
+  <div class="shell">
+    <span class="kicker">Отправная точка</span>
+    <h2>Где АБР сейчас</h2>
+    <p class="intro">Только то, что видно снаружи. Внутренних данных о продажах и продлениях нет.</p>
+    <details class="fold">
+      <summary>Продукты и цены <small>подписка, рейтинг, база</small></summary>
+      <div class="fold-body">
+        <p><span class="tag t-fact">факт</span>Годовая подписка на журнал — 29 000 ₽ (<a href="https://abreview.ru/about/sub/">АБР, подписка</a>). Рейтинг дилерских холдингов — 201 000 ₽ (<a href="https://abreview.ru/researches/rating/">АБР, рейтинг</a>). База дилеров — 82 000 ₽, 4 664 шоурума и 1 824 СТО на 1 октября 2026 (<a href="https://abreview.ru/researches/base/">АБР, база</a>).</p>
+        <p><span class="tag t-fact">факт</span>АБР уже делает совместные исследования: данные о шоурумах выходят вместе с «Газпромбанк Автолизингом» и цитируются деловой прессой (<a href="https://www.kommersant.ru/doc/9042935">Коммерсантъ</a>). Это готовая модель партнёрской аналитики.</p>
+        <p><span class="tag t-gap">нет данных</span>Сколько клиентов продлевают подписку, сколько покупают два продукта и больше, сколько компаний берут несколько мест.</p>
+      </div>
+    </details>
+    <details class="fold">
+      <summary>Рынок, на котором работают клиенты <small>октябрь 2026</small></summary>
+      <div class="fold-body">
+        <p><span class="tag t-fact">факт</span>В октябре 2026 продано 132,9 тыс. новых легковых машин, на 19,8% меньше, чем год назад (<a href="https://www.autostat.ru/press-releases/63433/">АВТОСТАТ</a>).</p>
+        <p><span class="tag t-hyp">гипотеза</span>В падающем рынке дилеры режут рекламу и «необязательные» подписки первыми. Выживает то, что помогает принимать решения о складе, сети и людях. Поэтому АБР выгоднее быть инструментом, а не изданием.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="v2-sec" id="world">
+  <div class="shell">
+    <span class="kicker">Мир по регионам</span>
+    <h2>Что делают отраслевые проекты в шести регионах</h2>
+    <p class="intro">По каждому региону — главная мысль и что из неё взять АБР. Полный каталог из 45 проектов — <a href="../#landscape">в версии 1.0</a>.</p>
+
+    <details class="fold">
+      <summary>Северная Америка <small>рейтинги, сравнение дилеров, индексы настроений</small></summary>
+      <div class="fold-body">
+        <p><b>Главная мысль:</b> издание зарабатывает на данных вокруг текста. Рейтинг, сравнение и индекс — продукты сами по себе.</p>
+        <div class="cases">
+          <div class="case"><h4>Automotive News · США</h4><p>Ежегодный Top 150 дилерских групп по продажам новых машин (<a href="https://www.autonews.com/retail/top-150-dealership-groups/2026/">Automotive News</a>), корпоративные планы с единым счётом (<a href="https://help.autonews.com/hc/en-us/articles/15018525870740-Corporate-Group-Subscriptions">Automotive News</a>).</p><p class="take">АБР: рейтинг уже есть. Не хватает командного доступа.</p></div>
+          <div class="case"><h4>NADA 20 Group · США</h4><p>Группы сопоставимых дилеров, финансовое сравнение и консультант (<a href="https://composite.nada.org/">NADA</a>).</p><p class="take">АБР: клуб сравнения для холдингов из рейтинга.</p></div>
+          <div class="case"><h4>Cox Automotive · США</h4><p>Квартальный индекс настроений дилеров: в III квартале 2026 опрошено 929 дилеров, индекс текущего рынка упал до 41 (<a href="https://www.coxautoinc.com/wp-content/uploads/2026/09/Q3-2026-Cox-Automotive-Dealer-Sentiment-Index.pdf">Cox Automotive</a>).</p><p class="take">АБР: опрос без финансовых данных, запускается быстро.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Европа <small>подписка с данными, барометры, рейтинги по отчётности</small></summary>
+      <div class="fold-body">
+        <p><b>Главная мысль:</b> сильные европейские издания связывают журнал с данными и регулярным опросом дилеров.</p>
+        <div class="cases">
+          <div class="case"><h4>Automobilwoche · Германия</h4><p>Корпоративный доступ и пакет с Datencenter (<a href="https://abo.automobilwoche.de/de/unternehmens-lizenz-anfragen">Automobilwoche</a>).</p><p class="take">АБР: подписка + база в одном пакете.</p></div>
+          <div class="case"><h4>AUTOHAUS pulsSchlag · Германия</h4><p>Ежемесячный опрос дилеров вместе с партнёром puls (<a href="https://www.puls-marktforschung.de/unsere-loesungen/unsere-tools/autohaus-panel.">puls</a>).</p><p class="take">АБР: ежемесячный барометр с исследовательским партнёром.</p></div>
+          <div class="case"><h4>Car Dealer Top 100 · Великобритания</h4><p>Рейтинг дилеров по EBITDA из публичной отчётности, со спонсором Carwow (<a href="https://cardealermagazine.co.uk/car-dealer-top-100-the-list-in-full-2/242936">Car Dealer Magazine</a>).</p><p class="take">АБР: рейтинг по прибыли без согласия дилеров — на открытой отчётности.</p></div>
+          <div class="case"><h4>Journal de l'Automobile · Франция</h4><p>Подписка на год — 139 €, в неё входят спецвыпуск о 100 крупнейших группах, архив, статистика и справочник «Organigrammes» (<a href="https://www.calameo.com/books/006876494300d33e9cafd">выпуск журнала</a>).</p><p class="take">АБР: справочник «кто есть кто» в холдингах как часть подписки.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Китай и Азия <small>индексы ассоциаций, платформы с SaaS для дилеров</small></summary>
+      <div class="fold-body">
+        <p><b>Главная мысль:</b> в Китае ценятся быстрые сигналы о стрессе дилеров. Индекс склада стал новостью сам по себе.</p>
+        <div class="cases">
+          <div class="case"><h4>CADA · Китай</h4><p>Ежемесячный индекс предупреждения по складам дилеров: в октябре 2026 — 62,2%, выше порога четвёртый месяц подряд (<a href="https://eu.36kr.com/en/p/4071707811517570">36Kr</a>).</p><p class="take">АБР: свой индекс склада или настроений, который цитируют СМИ.</p></div>
+          <div class="case"><h4>Autohome · Китай</h4><p>Помимо медиа продаёт дилерам витрины, управление складом, лиды и SaaS‑инструменты (<a href="https://www.finbar.com/research/companies/autohome-inc">Finbar</a>).</p><p class="take">АБР: напрямую не повторить, но видно, куда идут деньги дилера.</p></div>
+          <div class="case"><h4>Nikkei · Япония и Сингапур</h4><p>Журнал + платный цифровой архив; статьи о сделках связаны с базой компаний. ScoutAsia закрыт 30 октября 2026 (<a href="https://maintenance.scout.asia/">ScoutAsia</a>).</p><p class="take">АБР: связывать новости с карточкой холдинга.</p></div>
+          <div class="case"><h4>MarkLines · Япония</h4><p>Единый кабинет: продажи, производство, компании, поставщики (<a href="https://www.marklines.com/en/service">MarkLines</a>).</p><p class="take">АБР: один вход во все продукты вместо разрозненных PDF.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Австралия <small>короткий брифинг для руководителя</small></summary>
+      <div class="fold-body">
+        <div class="cases">
+          <div class="case"><h4>GoAutoNews Premium</h4><p>Отраслевой сайт и еженедельная рассылка об авторитейле, финансах и управлении (<a href="https://www.goautomedia.net/goautonews-premium">GoAuto Media</a>).</p><p class="take">АБР: еженедельный «что это значит для дилера» на одну страницу.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Южная Америка <small>исследования вокруг конференции</small></summary>
+      <div class="fold-body">
+        <div class="cases">
+          <div class="case"><h4>Automotive Business · Бразилия</h4><p>Выпускает тематические исследования: тренды, ИИ, ESG, электрификация, — часть из них готовится вокруг своей конференции ABX (<a href="https://www.automotivebusiness.com.br/estudos">Automotive Business</a>).</p><p class="take">АБР: доклад как продукт мероприятия, а не отдельно от него.</p></div>
+          <div class="case"><h4>SimIndex · Мексика</h4><p>Индекс рынка вместе с ассоциацией дилеров AMDA на стандартизированных данных дилеров (<a href="https://www.amda.mx/wp-content/uploads/amda_simdatagroup_250428.pdf">AMDA</a>).</p><p class="take">АБР: данные через партнёрство с ассоциацией.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="fold">
+      <summary>Россия <small>конкуренты и партнёры</small></summary>
+      <div class="fold-body">
+        <div class="cases">
+          <div class="case"><h4>АВТОСТАТ</h4><p>Исследования, оперативные данные, мониторинг цен и дилерских контрактов (<a href="https://www.autostat.ru/research/">АВТОСТАТ</a>).</p><p class="take">Конкурент в данных о рынке. АБР сильнее в данных о самих дилерах — там и стоит держаться.</p></div>
+        </div>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="v2-sec band" id="problems">
+  <div class="shell">
+    <span class="kicker">По задачам дилера</span>
+    <h2>Шесть вопросов, за ответы на которые платят</h2>
+    <p class="intro">Тот же мир, но сгруппированный по тому, что болит у клиента. Колонка «АБР» — гипотезы.</p>
+    <div class="scroll"><table class="v2t">
+      <thead><tr><th>#</th><th>Вопрос клиента</th><th>Кто отвечает в мире</th><th>Что может АБР</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td>Куда идёт рынок и что думают коллеги?</td><td>Cox Automotive, AUTOHAUS pulsSchlag</td><td>Ежемесячный барометр дилеров</td></tr>
+        <tr><td>02</td><td>Не перегружен ли у нас склад?</td><td>CADA, vAuto</td><td>Индекс склада в барометре</td></tr>
+        <tr><td>03</td><td>Где открывать и закрывать точки?</td><td>Urban Science, VWE, Lightstone</td><td>Мониторинг сети по базе из 4 664 шоурумов: открытия, закрытия, смены брендов</td></tr>
+        <tr><td>04</td><td>Как мы выглядим на фоне конкурентов?</td><td>NADA 20 Group, Car Dealer Top 100</td><td>Рейтинг по открытой отчётности и клуб сравнения</td></tr>
+        <tr><td>05</td><td>С каким брендом работать?</td><td>Quintegia (удовлетворённость дилеров)</td><td>Опрос дилеров о работе с брендами, включая китайские</td></tr>
+        <tr><td>06</td><td>Кто есть кто, к кому идти?</td><td>Journal de l'Automobile, PitchBook</td><td>Карточки холдингов и руководителей</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="v2-sec" id="top10">
+  <div class="shell">
+    <span class="kicker">Топ‑10 практик</span>
+    <h2>Что можно забрать уже сейчас</h2>
+    <p class="intro">Отсортировано по тому, насколько это близко к тому, что у АБР уже есть. Чем выше — тем дешевле попробовать.</p>
+    <div class="scroll"><table class="v2t">
+      <thead><tr><th>#</th><th>Практика</th><th>Кто делает</th><th>Что нужно АБР</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td>Командная подписка с единым счётом</td><td>Automotive News, Automobilwoche</td><td>Правила доступа и цена за место</td></tr>
+        <tr><td>02</td><td>Пакет «журнал + база»</td><td>Automobilwoche Datencenter</td><td>Решение о цене пакета</td></tr>
+        <tr><td>03</td><td>Справочник руководителей холдингов в подписке</td><td>Journal de l'Automobile</td><td>Редакционное время на обновление</td></tr>
+        <tr><td>04</td><td>Еженедельный брифинг руководителю</td><td>GoAutoNews Premium</td><td>Одна страница в неделю</td></tr>
+        <tr><td>05</td><td>Ежемесячный опрос дилеров</td><td>AUTOHAUS + puls, Cox</td><td>Панель дилеров и партнёр</td></tr>
+        <tr><td>06</td><td>Индекс, который цитируют СМИ</td><td>CADA</td><td>Методика и регулярность</td></tr>
+        <tr><td>07</td><td>Рейтинг по прибыли из открытой отчётности</td><td>Car Dealer Top 100</td><td>Сбор отчётности юрлиц холдингов</td></tr>
+        <tr><td>08</td><td>Исследование вокруг мероприятия</td><td>Automotive Business</td><td>Связка конференции и доклада</td></tr>
+        <tr><td>09</td><td>Единый кабинет для всех продуктов</td><td>MarkLines</td><td>Разработка; дорого</td></tr>
+        <tr><td>10</td><td>Клуб сравнения с консультантом</td><td>NADA 20 Group</td><td>Согласие дилеров делиться цифрами; сложнее всего</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="v2-sec band" id="closed">
+  <div class="shell">
+    <span class="kicker">Уроки закрытых проектов</span>
+    <h2>Где отраслевые медиа ломались</h2>
+    <p class="intro">Это не значит, что у АБР будет так же. Но повторяющийся сюжет виден.</p>
+    <details class="fold">
+      <summary>Пять случаев <small>2009–2026</small></summary>
+      <div class="fold-body">
+        <div class="cases">
+          <div class="case"><h4>Automotive News Europe, 2009</h4><p>Печатная версия закрыта, хотя тираж рос: в кризис поставщики урезали рекламу (<a href="https://www.european-rubber-journal.com/article/2082378/automotive-news-europe-ends-print-edition">European Rubber Journal</a>).</p><p class="take">Урок: тираж не спасает, если деньги только от рекламы.</p></div>
+          <div class="case"><h4>TEN Publishing, 2019</h4><p>Закрыла печать 19 из 22 автомобильных журналов, включая Automobile (<a href="https://www.jalopnik.com/ten-publishing-kills-19-automotive-print-publications-i-1840273584/">Jalopnik</a>).</p><p class="take">Урок: потребительская печать уходит. B2B держится на полезности.</p></div>
+          <div class="case"><h4>Autoblog, 2024</h4><p>Продан, а редакция уволена после 20 лет работы (<a href="https://www.theautopian.com/autoblog-as-we-know-it-is-dead/">The Autopian</a>).</p><p class="take">Урок: трафик без собственного продукта легко потерять при смене владельца.</p></div>
+          <div class="case"><h4>Automotive Dive → WardsAuto</h4><p>Два отраслевых издания объединились в одно (<a href="https://www.wardsauto.com/news/archive-auto-teamsters-canada-cpkc-canadian-national-railroad-workers-lockout-strike/724955/">WardsAuto</a>).</p><p class="take">Урок: на узком рынке два одинаковых издания не нужны. Нужна своя ниша.</p></div>
+          <div class="case"><h4>ScoutAsia, 2026</h4><p>Сервис данных группы Nikkei закрыт 30 октября 2026 (<a href="https://maintenance.scout.asia/">ScoutAsia</a>).</p><p class="take">Урок: даже у сильной группы база данных должна окупаться сама.</p></div>
+        </div>
+        <p style="margin-top:14px"><b>Общий вывод.</b> Выживают те, кто продаёт клиенту инструмент и регулярность, а не охваты. Для АБР это аргумент в пользу подписки, данных и работы с текущими клиентами.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section class="v2-sec" id="clients">
+  <div class="shell">
+    <span class="kicker">Работа с текущими клиентами</span>
+    <h2>Клиент купил отчёт. Что дальше?</h2>
+    <p class="intro">Новый клиент стоит дороже, чем продление старого. Ниже — цикл, который может вести менеджер по работе с клиентами. Это предложение, а не описание того, как АБР работает сегодня.</p>
+    <div class="cycle">
+      <div><h4>Запуск</h4><p>Через неделю после покупки — звонок: кто пользуется, какие решения принимает, что искал и не нашёл.</p></div>
+      <div><h4>Польза</h4><p>Подборка под задачу клиента: срез рейтинга по его региону, новые точки конкурентов из базы.</p></div>
+      <div><h4>Обзор</h4><p>Раз в квартал — 30 минут о рынке и о том, как клиент выглядит на фоне коллег.</p></div>
+      <div><h4>Продление</h4><p>За 60 дней до окончания: что клиент получил за год, предложение на следующий.</p></div>
+      <div><h4>Рост</h4><p>Дополнительные места, второй продукт, участие в барометре или мероприятии.</p></div>
+    </div>
+    <details class="fold" style="margin-top:20px">
+      <summary>Какие цифры смотреть менеджеру <small>чтобы понимать, работает ли</small></summary>
+      <div class="fold-body">
+        <ul class="plain">
+          <li><span class="tag t-gap">нет данных</span>Доля продлений по каждому продукту.</li>
+          <li><span class="tag t-gap">нет данных</span>Сколько клиентов покупают два продукта и больше.</li>
+          <li><span class="tag t-gap">нет данных</span>Сколько человек в компании клиента реально читают и пользуются.</li>
+          <li><span class="tag t-gap">нет данных</span>Причины отказа от продления.</li>
+          <li><span class="tag t-hyp">гипотеза</span>Если доля продлений низкая, сначала нужно чинить ценность продукта, а не продавать новые.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="fold">
+      <summary>Обратная связь в редакцию <small>самое ценное от менеджера</small></summary>
+      <div class="fold-body"><p>Менеджер слышит вопросы клиентов раньше всех. Раз в месяц — короткая записка редакции и аналитикам: о чём спрашивают, чего не хватает в базе, какие холдинги интересны. Так продукты АБР начинают расти из реальных запросов, а не из догадок.</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="v2-sec band" id="product">
+  <div class="shell">
+    <span class="kicker">Продуктовая карта 2.0</span>
+    <h2>Четыре слоя вокруг журнала</h2>
+    <p class="intro">Всё, кроме уже существующих продуктов АБР, — гипотезы.</p>
+    <div class="layers">
+      <div class="layer"><span class="kicker">Медиа</span><h3>Читать</h3><ul><li>Журнал и архив <span class="tag t-fact">есть</span></li><li>Еженедельный брифинг руководителю</li><li>Тематические выпуски по ролям</li></ul></div>
+      <div class="layer"><span class="kicker">Данные</span><h3>Проверять</h3><ul><li>Рейтинг холдингов <span class="tag t-fact">есть</span></li><li>База дилеров <span class="tag t-fact">есть</span></li><li>Ежемесячные изменения сети</li><li>Карточки холдингов</li></ul></div>
+      <div class="layer"><span class="kicker">Сигналы</span><h3>Сравнивать</h3><ul><li>Барометр дилеров</li><li>Индекс склада</li><li>Рейтинг по открытой отчётности</li></ul></div>
+      <div class="layer"><span class="kicker">Сервис</span><h3>Обсуждать</h3><ul><li>Менеджер клиента</li><li>Квартальные обзоры</li><li>Клуб сравнения холдингов</li><li>Исследования под заказ <span class="tag t-fact">есть</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="v2-sec" id="first">
+  <div class="shell">
+    <span class="kicker">Что делать первым</span>
+    <h2>Предложение на 90 дней</h2>
+    <div class="verdict">
+      <p><b>1. Назначить человека на текущих клиентов.</b> Пройти цикл «запуск → обзор → продление» хотя бы с 20 клиентами рейтинга и базы. Это почти ничего не стоит, но даёт ответ на главный вопрос: за что клиенты готовы платить снова.</p>
+      <p><b>2. На этих же разговорах проверить командную подписку.</b> Пакет на 4 места по прайсу — 116 000 ₽. Считать только оплаченный счёт.</p>
+      <p><b>3. Запустить пилот барометра.</b> Один опрос дилеров о рынке и складах, публикация с партнёром. Если его цитируют, делать ежемесячно.</p>
+      <p><b>Критерий продолжения</b> <span class="tag t-hyp">предлагаю, пороги — с АБР</span>: 3 оплаты командной подписки из 20 разговоров и хотя бы одна публикация барометра в деловой прессе. Если меньше, сначала разбираться, почему клиенты не продлевают.</p>
+    </div>
+    <details class="fold" style="margin-top:20px">
+      <summary>Что может поменять порядок <small>данные, которые есть только у АБР</small></summary>
+      <div class="fold-body"><ul class="plain">
+        <li>Доля продлений и число многоместных подписок.</li>
+        <li>Права на перепродажу обновлений базы.</li>
+        <li>Часы редакции на ежемесячное обновление.</li>
+        <li>Есть ли у АБР панель дилеров для опроса.</li>
+      </ul></div>
+    </details>
+  </div>
+</section>
+
+<section class="v2-sec band" id="sources">
+  <div class="shell">
+    <span class="kicker">Пределы анализа</span>
+    <h2>Источники и оговорки</h2>
+    <p class="intro">Все факты — из открытых источников, проверено 15–19 ноября 2026. Выручку, продления и окупаемость проектов АБР оценить по открытым данным нельзя, поэтому их здесь нет. Ссылки стоят рядом с каждым утверждением; каталог из 45 проектов с источниками — <a href="../assets/benchmarks.csv">в CSV версии 1.0</a>.</p>
+  </div>
+</section>
+</main>
+<footer class="shell" style="padding:28px 0;color:var(--muted);font-size:14px">Независимый анализ по открытым данным. Не является позицией АвтоБизнесРевю.</footer>
+</body>
+</html>
